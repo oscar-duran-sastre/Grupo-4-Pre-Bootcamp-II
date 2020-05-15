@@ -41,7 +41,7 @@
 
     <!-- welcome -->
         <div class="row justify-content-center pt-5 pb-4">
-            <div class="col-auto" id="welcome-login"><p>Crea una cuenta</p></div>
+            <div class="col-auto" id="welcome-login"><p>¡Hola!</p></div>
         </div>
     <!-- END welcome -->
 
@@ -49,38 +49,30 @@
         <div class="row justify-content-center py-3">
             <div class="col-auto">
                 <div class="card">
-                    <div class="card-header border-0">
-                        <div class="text-muted text-center mt-2 mb-3"><small>Completa los datos</small></div>
+                    <div class="card-header pb-5 border-0">
+                        <div class="text-muted text-center mt-2 mb-3"><small>Iniciar sesión con</small></div>
                         <div class="btn-wrapper text-center">
+                            <a href="https://github.com" class="btn btn-light btn-icon" target="_top">
+                                <span><img src="/assets/img/logos/github.svg"> Github</span></a>
+                            <a href="https://google.com" class="btn btn-light btn-icon" target="_top">
+                                <span><img src="/assets/img/logos/google.svg"> Google</span></a>
                         </div>
                     </div>
-                    <div class="card-body px-5 pt-1 border-0">
+                    <div class="card-body px-5 pt-3 border-0">
+                        <div class="text-center mb-4">
+                            <a href="register.html" class="nav-link" target="_top" id="nav-login">
+                            <p id="little-blue">Crear una nueva cuenta</p></a><p id="little-grey"> O iniciar sesión con credenciales:</p>
+                        </div>
                         <form role="form">
                             <div class="form-group mb-3 pt-5">
                                 <div class="input-group input-group-merge input-group-alternative">
                                     <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-user-graduate"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Nombre y apellidos" type="name">
-                                </div>
-                            </div>
-                            <div class="form-group mb-3">
-                                <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                     </div>
-                                    <input class="form-control" placeholder="Email" type="mail">
+                                    <input class="form-control" placeholder="Email" type="email">
                                 </div>
                             </div>
-                            <div class="form-group mb-3">
-                                <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Repite email" type="email">
-                                </div>
-                            </div>
-                            <div class="form-group mb-3">
+                            <div class="form-group">
                                 <div class="input-group input-group-merge input-group-alternative">
                                     <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-lock-open"></i></span>
@@ -88,17 +80,15 @@
                                     <input class="form-control" placeholder="Password" type="password">
                                 </div>
                             </div>
-                            <div class="form-group mb-3">
-                                <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-lock-open"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Repite password" type="password">
-                                </div>
+                            <div class="custom-control custom-control-alternative custom-checkbox">
+                                <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+                                <label class="custom-control-label" for=" customCheckLogin">
+                                <span class="text-muted">Recuérdame</span>
+                                </label>
                             </div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-primary my-4">
-                                <a href="announcement-list.html" class="nav-link" target="_top" id="buttom-login">Crear cuenta</a></button>
+                                <a href="announcement-list.html" class="nav-link" target="_top" id="buttom-login">Iniciar sesión</a></button>
                             </div>
                         </form>
                     </div>
@@ -109,7 +99,7 @@
                         class="text-light" target="_top"><small>¿Se te olvidó tu contraseña?</small></a>
                     </div>
                     <div class="col-6 text-right">
-                        <a href="index.html" class="text-light" target="_top"><small>Iniciar sesión</small></a>
+                        <a href="register.html" class="text-light" target="_top"><small>Crear una nueva cuenta</small></a>
                     </div>
                 </div>
             </div>
