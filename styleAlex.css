@@ -1,0 +1,37 @@
+
+
+.fa-user-tag{
+    color: indigo;
+}
+
+.fa-thumbtack{
+    color: indigo;
+}
+
+.fa-file {
+    color: indigo;
+}
+
+.fa-user-alt {
+    color: indigo;
+}
+
+.fa-search {
+    color: indigo;
+}
+
+.navigationslinks:hover{
+    color: darkblue;
+    text-decoration: none;
+}
+.navegationLinks {
+color: grey;
+}
+
+.form-control{
+    border-radius: 20px;
+}
+.container{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(182,239,250,1) 100%, rgba(9,9,121,1) 100%);
+}
