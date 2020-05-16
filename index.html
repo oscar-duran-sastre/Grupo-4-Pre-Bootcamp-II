@@ -1,133 +1,251 @@
 git <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="icon" href="favicon.png" type="image/png">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <title>Iniciar sesión</title>
-    </head>
-    <body id="body-login">
-        <div class="container-fluid">
-    <!-- nav -->
-        <nav class="pt-3 pb-4">
-            <div class="row">
-                <div class="col-7 offset-5">
-                    <ul class="nav nav-navbar justify-content-center">
-                        <li class="nav-item">
-                            <a href="announcement-list.html" class="nav-link" target="_top" id="nav-login">
-                                <i class="fas fa-globe"></i> Tablero</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="register.html" class="nav-link" target="_top" id="nav-login">
-                                <i class="fas fa-user-circle"></i> Registro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link" target="_top" id="nav-login">
-                                <i class="fas fa-key"></i> Iniciar sesión</a>
-                        </li>
-                            <a href="people-new.html" class="nav-link" target="_top" id="nav-login">
-                                <i class="fas fa-user"></i> Perfil</a>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    <!-- END nav -->
-
-    <!-- welcome -->
-        <div class="row justify-content-center pt-5 pb-4">
-            <div class="col-auto" id="welcome-login"><p>¡Hola!</p></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Iniciar sesión</title>
+  </head>
+  <body id="body-login">
+    <div class="container-fluid">
+      <!-- nav -->
+      <nav class="pt-3 pb-4">
+        <div class="row">
+          <div class="col-7 offset-5">
+            <ul class="nav nav-navbar justify-content-center">
+              <li class="nav-item">
+                <a
+                  href="announcement-list.html"
+                  class="nav-link"
+                  target="_top"
+                  id="nav-login"
+                >
+                  <i class="fas fa-globe"></i> Tablero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="register.html"
+                  class="nav-link"
+                  target="_top"
+                  id="nav-login"
+                >
+                  <i class="fas fa-user-circle"></i> Registro</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="nav-link"
+                  target="_top"
+                  id="nav-login"
+                >
+                  <i class="fas fa-key"></i> Iniciar sesión</a
+                >
+              </li>
+              <a
+                href="people-new.html"
+                class="nav-link"
+                target="_top"
+                id="nav-login"
+              >
+                <i class="fas fa-user"></i> Perfil</a
+              >
+            </ul>
+          </div>
         </div>
-    <!-- END welcome -->
+      </nav>
+      <!-- END nav -->
 
-    <!-- card -->
-        <div class="row justify-content-center py-3">
-            <div class="col-auto">
-                <div class="card">
-                    <div class="card-header pb-5 border-0">
-                        <div class="text-muted text-center mt-2 mb-3"><small>Iniciar sesión con</small></div>
-                        <div class="btn-wrapper text-center">
-                            <a href="https://github.com" class="btn btn-light btn-icon" target="_top">
-                                <span><img src="/assets/img/logos/github.svg"> Github</span></a>
-                            <a href="https://google.com" class="btn btn-light btn-icon" target="_top">
-                                <span><img src="/assets/img/logos/google.svg"> Google</span></a>
-                        </div>
-                    </div>
-                    <div class="card-body px-5 pt-3 border-0">
-                        <div class="text-center mb-4">
-                            <a href="register.html" class="nav-link" target="_top" id="nav-login">
-                            <p id="little-blue">Crear una nueva cuenta</p></a><p id="little-grey"> O iniciar sesión con credenciales:</p>
-                        </div>
-                        <form role="form">
-                            <div class="form-group mb-3 pt-5">
-                                <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Email" type="email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group input-group-merge input-group-alternative">
-                                    <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-lock-open"></i></span>
-                                    </div>
-                                    <input class="form-control" placeholder="Password" type="password">
-                                </div>
-                            </div>
-                            <div class="custom-control custom-control-alternative custom-checkbox">
-                                <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                <label class="custom-control-label" for=" customCheckLogin">
-                                <span class="text-muted">Recuérdame</span>
-                                </label>
-                            </div>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary my-4">
-                                <a href="announcement-list.html" class="nav-link" target="_top" id="buttom-login">Iniciar sesión</a></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-6 text-left">
-                        <a href="https://www.mayoclinic.org/es-es/diseases-conditions/alzheimers-disease/in-depth/memory-loss/art-20046326" 
-                        class="text-light" target="_top"><small>¿Se te olvidó tu contraseña?</small></a>
-                    </div>
-                    <div class="col-6 text-right">
-                        <a href="register.html" class="text-light" target="_top"><small>Crear una nueva cuenta</small></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- END card -->
+      <!-- welcome -->
+      <div class="row justify-content-center pt-5 pb-4">
+        <div class="col-auto" id="welcome-login"><p>¡Hola!</p></div>
+      </div>
+      <!-- END welcome -->
 
-    <!-- footer -->
-        <footer class="pt-5 pb-3">
-            <div class="row">
-                <div class="col-6 offset-6">
-                    <ul class="nav nav-footer justify-content-center">
-                        <li class="nav-item">
-                            <a href="https://www.hubescuela.com/" class="nav-link" target="_top" id="footer-login">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.gonzalezlopez.dev/" class="nav-link" target="_top" id="footer-login">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.mit.edu/~amini/LICENSE.md" class="nav-link" target="_top" id="footer-login">Licencia MIT</a>
-                        </li>
-                    </ul>
-                </div>
+      <!-- card -->
+      <div class="row justify-content-center py-3">
+        <div class="col-auto">
+          <div class="card">
+            <div class="card-header pb-5 border-0">
+              <div class="text-muted text-center mt-2 mb-3">
+                <small>Iniciar sesión con</small>
+              </div>
+              <div class="btn-wrapper text-center">
+                <a
+                  href="https://github.com"
+                  class="btn btn-light btn-icon"
+                  target="_top"
+                >
+                  <span
+                    ><img src="assets/img/logos/github.svg" /> Github</span
+                  ></a
+                >
+                <a
+                  href="https://google.com"
+                  class="btn btn-light btn-icon"
+                  target="_top"
+                >
+                  <span
+                    ><img src="assets/img/logos/google.svg" /> Google</span
+                  ></a
+                >
+              </div>
             </div>
-        </footer>
-<!-- END footer -->
+            <div class="card-body px-5 pt-3 border-0">
+              <div class="text-center mb-4">
+                <a
+                  href="register.html"
+                  class="nav-link"
+                  target="_top"
+                  id="nav-login"
+                >
+                  <p id="little-blue">Crear una nueva cuenta</p></a
+                >
+                <p id="little-grey">O iniciar sesión con credenciales:</p>
+              </div>
+              <form role="form">
+                <div class="form-group mb-3 pt-5">
+                  <div
+                    class="input-group input-group-merge input-group-alternative"
+                  >
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fas fa-envelope"></i
+                      ></span>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Email"
+                      type="email"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div
+                    class="input-group input-group-merge input-group-alternative"
+                  >
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fas fa-lock-open"></i
+                      ></span>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Password"
+                      type="password"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="custom-control custom-control-alternative custom-checkbox"
+                >
+                  <input
+                    class="custom-control-input"
+                    id=" customCheckLogin"
+                    type="checkbox"
+                  />
+                  <label class="custom-control-label" for=" customCheckLogin">
+                    <span class="text-muted">Recuérdame</span>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary my-4">
+                    <a
+                      href="announcement-list.html"
+                      class="nav-link"
+                      target="_top"
+                      id="buttom-login"
+                      >Iniciar sesión</a
+                    >
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6 text-left">
+              <a
+                href="https://www.mayoclinic.org/es-es/diseases-conditions/alzheimers-disease/in-depth/memory-loss/art-20046326"
+                class="text-light"
+                target="_top"
+                ><small>¿Se te olvidó tu contraseña?</small></a
+              >
+            </div>
+            <div class="col-6 text-right">
+              <a href="register.html" class="text-light" target="_top"
+                ><small>Crear una nueva cuenta</small></a
+              >
+            </div>
+          </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    </body>
+      </div>
+      <!-- END card -->
+
+      <!-- footer -->
+      <footer class="pt-5 pb-3">
+        <div class="row">
+          <div class="col-6 offset-6">
+            <ul class="nav nav-footer justify-content-center">
+              <li class="nav-item">
+                <a
+                  href="https://www.hubescuela.com/"
+                  class="nav-link"
+                  target="_top"
+                  id="footer-login"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://www.gonzalezlopez.dev/"
+                  class="nav-link"
+                  target="_top"
+                  id="footer-login"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://www.mit.edu/~amini/LICENSE.md"
+                  class="nav-link"
+                  target="_top"
+                  id="footer-login"
+                  >Licencia MIT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- END footer -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
+
