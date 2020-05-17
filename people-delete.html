@@ -36,53 +36,65 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2 mt-4">
+        <div class="col-12 mt-2 col-md-2 mt-md-4">
           <nav>
-            <dl class="border-bottom border-secondary mb-2 mt-5 pb-2">
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap"><i class="fas fa-user-tag"></i></div>
-                <a href="announcement-list.html" class="navegationLinks"
-                  >Anuncios</a
-                >
+            <dl
+              class="d-flex justify-content-around d-md-block mt-2 border-bottom border-secondary mb-2 mt-md-5 pb-2"
+            >
+              <dt class="mb-2">
+                <a href="announcement-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-user-tag menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Anuncios</div>
+                </a>
               </dt>
 
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap">
-                  <i class="fas fa-thumbtack text-danger"></i>
-                </div>
-                <a href="#" class="navegationLinks">Tareas</a>
-              </dt>
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap">
-                  <i class="fas fa-user-alt fa-people"></i>
-                </div>
-                <a href="people-list.html" class="navegationLinks">Personas</a>
+              <dt class="mb-2">
+                <a href="#" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-thumbtack icon-tasks menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Tareas</div>
+                </a>
               </dt>
 
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap">
-                  <i class="fas fa-file fa-pages"></i>
-                </div>
-                <a href="#" class="navegationLinks">Páginas</a>
+              <dt class="mb-2">
+                <a href="people-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-user-alt fa-people menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Personas</div>
+                </a>
               </dt>
 
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap">
-                  <i class="fas fa-search fa-revisions"></i>
-                </div>
-                <a href="#" class="navegationLinks">Revisiones</a>
+              <dt class="mb-2">
+                <a href="#" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-file fa-pages menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Páginas</div>
+                </a>
+              </dt>
+              <dt class="mb-2">
+                <a href="#" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-search fa-revisions menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Revisiones</div>
+                </a>
               </dt>
             </dl>
           </nav>
         </div>
-        <div class="col-10">
+        <div class="col-12 col-md-10">
           <header
             class="row p-2 pt-3 pb-5 justify-content-center align-items-start text-white"
           >
-            <div class="col-6 small mt-2">
-              <p>DASHBOARD</p>
+            <div class="col-6 col-md-6 small mt-2">
+              <p>TABLERO</p>
             </div>
-            <div class="col-4 small">
+            <div class="col-12 order-3 col-md-4 order-md-2 pt-2 pr-md-5">
               <form action="">
                 <input
                   class="form-control input-lg"
@@ -91,9 +103,9 @@
                 />
               </form>
             </div>
-            <div class="col-2">
-              <div class="row align-items-center">
-                <div class="col-4 rounded-circle">
+            <div class="col-6 col-md-2 order-md-3">
+              <div class="d-flex align-items-center justify-content-end">
+                <div class="mr-2 rounded-circle">
                   <span>
                     <img
                       class="rounded-circle"
@@ -103,14 +115,14 @@
                     />
                   </span>
                 </div>
-                <div class="col-8 text-center small">
-                  <p>CarlosAdmin</p>
+                <div class="d-none d-md-block text-left small pt-2">
+                  <p class="">CarlosAdmin</p>
                 </div>
               </div>
             </div>
           </header>
 
-          <main class="row mt-n5">
+          <main class="row mt-n3 mt-md-n5 px-md-3">
             <div class="col bg-light mx-3 rounded">
               <div class="mb-5 mt-4 d-flex">
                 <h1 class="text-dark flex-grow-1">Listado de Personas</h1>
@@ -119,7 +131,8 @@
                   type="button"
                   class="btn btn-blue mx-2"
                 >
-                  Añadir +
+                  <span class="d-none d-md-inline">Añadir</span>
+                  <i class="fas fa-plus"></i>
                 </a>
               </div>
               <table class="table">

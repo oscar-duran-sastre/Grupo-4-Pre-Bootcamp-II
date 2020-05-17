@@ -36,53 +36,65 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2 mt-4">
+        <div class="col-12 mt-2 col-md-2 mt-md-4">
           <nav>
-            <dl class="border-bottom border-secondary mb-2 mt-5 pb-2">
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap"><i class="fas fa-user-tag"></i></div>
-                <a href="announcement-list.html" class="navegationLinks"
-                  >Anuncios</a
-                >
+            <dl
+              class="d-flex justify-content-around d-md-block mt-2 border-bottom border-secondary mb-2 mt-md-5 pb-2"
+            >
+              <dt class="mb-2">
+                <a href="announcement-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-user-tag menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Anuncios</div>
+                </a>
               </dt>
 
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap">
-                  <i class="fas fa-thumbtack text-danger"></i>
-                </div>
-                <a href="#" class="navegationLinks">Tareas</a>
-              </dt>
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap">
-                  <i class="fas fa-user-alt fa-people"></i>
-                </div>
-                <a href="people-list.html" class="navegationLinks">Personas</a>
+              <dt class="mb-2">
+                <a href="#" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-thumbtack icon-tasks menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Tareas</div>
+                </a>
               </dt>
 
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap">
-                  <i class="fas fa-file fa-pages"></i>
-                </div>
-                <a href="#" class="navegationLinks">Páginas</a>
+              <dt class="mb-2">
+                <a href="people-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-user-alt fa-people menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Personas</div>
+                </a>
               </dt>
 
-              <dt class="mb-2 d-flex justify-content-start">
-                <div class="icons-wrap">
-                  <i class="fas fa-search fa-revisions"></i>
-                </div>
-                <a href="#" class="navegationLinks">Revisiones</a>
+              <dt class="mb-2">
+                <a href="#" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-file fa-pages menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Páginas</div>
+                </a>
+              </dt>
+              <dt class="mb-2">
+                <a href="#" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-search fa-revisions menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Revisiones</div>
+                </a>
               </dt>
             </dl>
           </nav>
         </div>
-        <div class="col-10">
+        <div class="col-12 col-md-10">
           <header
             class="row p-2 pt-3 pb-5 justify-content-center align-items-start text-white"
           >
-            <div class="col-6 small mt-2">
-              <p>DASHBOARD</p>
+            <div class="col-6 col-md-6 small mt-2">
+              <p>TABLERO</p>
             </div>
-            <div class="col-4 small">
+            <div class="col-12 order-3 col-md-4 order-md-2 pt-2 pr-md-5">
               <form action="">
                 <input
                   class="form-control input-lg"
@@ -91,9 +103,9 @@
                 />
               </form>
             </div>
-            <div class="col-2">
-              <div class="row align-items-center">
-                <div class="col-4 rounded-circle">
+            <div class="col-6 col-md-2 order-md-3">
+              <div class="d-flex align-items-center justify-content-end">
+                <div class="mr-2 rounded-circle">
                   <span>
                     <img
                       class="rounded-circle"
@@ -103,71 +115,137 @@
                     />
                   </span>
                 </div>
-                <div class="col-8 text-center small">
-                  <p>CarlosAdmin</p>
+                <div class="d-none d-md-block text-left small pt-2">
+                  <p class="">CarlosAdmin</p>
                 </div>
               </div>
             </div>
           </header>
 
-          <main class="row mt-n5">
-            <div class="col bg-light mx-3 rounded">
+          <main class="row mt-n3 mt-md-n5 px-md-3">
+            <div class="col mx-3 bg-light rounded">
               <div class="mb-5 mt-4 d-flex">
                 <h1 class="text-dark flex-grow-1">Editar Persona</h1>
-                <button type="button" class="btn btn-success mx-2">
-                  Guardar
+                <button type="button" class="btn btn-success">
+                  <i class="fas fa-save color-white mr-md-2" title="Guardar"></i
+                  ><span class="d-none d-md-inline">Guardar</span>
                 </button>
-                <a href="people-list.html" class="btn btn-danger mx-2">
-                  Salir sin guardar
+
+                <a
+                  href="people-list.html"
+                  class="btn btn-danger mx-2"
+                  title="Salir sin guardar"
+                >
+                  <i class="fas fa-times mr-md-2 color-white"></i
+                  ><span class="d-none d-md-inline">Salir sin guardar</span>
                 </a>
               </div>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" class="text-secondary">NOMBRE</th>
-                    <th scope="col" class="text-center text-secondary">
-                      EMAIL
-                    </th>
-                    <th scope="col" class="text-center text-secondary">
-                      ROL
-                    </th>
-                    <th scope="col" class="text-center text-secondary">
-                      ACTIVO
-                    </th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <form action="">
+                    <label
+                      for="userName"
+                      class="font-weight-bold text-secondary"
+                      >Nombre</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="Carlos González"
+                      class="form-control mb-4"
+                      id="userName"
+                    />
+                    <label for="" class="font-weight-bold text-secondary"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control mb-4"
+                      placeholder="carlos@escuela.es"
+                    />
+
+                    <span class="font-weight-bold text-secondary">Rol</span>
+                    <div class="form-check mt-2">
                       <input
-                        type="text"
-                        placeholder="Carlos González"
-                        class="border-secondary bg-light p-1"
+                        class="form-check-input"
+                        type="radio"
+                        name="role"
+                        id="teacher"
+                        value="teacher"
+                        checked
                       />
-                    </th>
-                    <td class="text-center">
+                      <label class="form-check-label" for="teacher">
+                        Profesor
+                      </label>
+                    </div>
+                    <div class="form-check">
                       <input
-                        type="email"
-                        placeholder="carlos@escuela.es"
-                        class="border-secondary bg-light p-1"
+                        class="form-check-input"
+                        type="radio"
+                        name="role"
+                        id="student"
+                        value="student"
                       />
-                    </td>
-                    <td class="text-center">
-                      <select name="role" class="border-0 bg-light">
-                        <option value="teacher">Profesor</option>
-                        <option value="student">Estudiante</option>
-                        <option value="asisTeacher">Profesor Aux.</option>
-                        <option value="designer">Diseñador</option>
-                        <option value="watcher">Observador</option>
-                      </select>
-                    </td>
-                    <td class="text-center">
-                      <input type="checkbox" name="activeUser" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                      <label class="form-check-label" for="student">
+                        Estudiante
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="role"
+                        id="asTeacher"
+                        value="asTeacher"
+                      />
+                      <label class="form-check-label" for="asTeacher">
+                        Profesor Auxiliar
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="role"
+                        id="designer"
+                        value="designer"
+                      />
+                      <label class="form-check-label" for="designer">
+                        Diseñador
+                      </label>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="role"
+                        id="watcher"
+                        value="watcher"
+                      />
+                      <label class="form-check-label" for="watcher">
+                        Observador
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        id="activeUser"
+                        name="activeUser"
+                        class="form-check-input"
+                        checked
+                      /><label class="form-check-label" for="activeUser"
+                        >Activo</label
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="button" class="btn btn-success mx-auto">
+                    Guardar
+                  </button>
+                </div>
+              </div>
             </div>
           </main>
 
