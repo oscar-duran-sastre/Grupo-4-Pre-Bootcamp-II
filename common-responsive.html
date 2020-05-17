@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listado de Anuncios</title>
+    <title>Common</title>
     <link rel="icon" href="favicon.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/4d73159aa5.js"
@@ -15,7 +15,6 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="style.css" />
 
     <script
@@ -126,64 +125,12 @@
           <main class="row mt-n3 mt-md-n5 px-md-3">
             <div class="col bg-light mx-3 rounded">
               <div class="mb-5 mt-4 d-flex">
-                <h1 class="text-dark flex-grow-1">Listado de Anuncios</h1>
-                <a
-                  href="announcement-new.html"
-                  type="button"
-                  class="btn btn-blue mx-2"
-                >
-                  <span class="d-none d-md-inline">Añadir</span>
+                <h1 class="text-dark flex-grow-1">Título de la sección</h1>
+                <a href="#" type="button" class="btn btn-blue mx-2">
+                  <span class="d-none d-md-inline">Botón</span>
                   <i class="fas fa-plus"></i>
                 </a>
               </div>
-              <table class="table table-responsive-md">
-                <thead>
-                  <tr>
-                    <th scope="col" class="text-secondary">TÍTULO</th>
-                    <th scope="col" class="text-center text-secondary">
-                      ADJUNTAR
-                    </th>
-                    <th scope="col" class="text-center text-secondary">
-                      PUBLICAR EN
-                    </th>
-                    <th scope="col" class="text-center text-secondary">
-                      ATRASAR PUBLICACIÓN
-                    </th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      Alerta por invasión zombie
-                    </th>
-                    <td class="text-center">
-                      <i class="fas fa-file mr-2"></i>protocoloZ.pdf
-                    </td>
-                    <td class="text-center">
-                      Todas
-                    </td>
-                    <td class="text-center">
-                      <input type="checkbox" name="delay" disabled checked />
-                    </td>
-                    <td>
-                      <a
-                        href="announcement-edit.html"
-                        class="text-reset mx-1"
-                        title="Editar"
-                        ><i class="fas fa-edit text-success"></i
-                      ></a>
-                      <a
-                        href="announcement-delete.html"
-                        class="text-reset mx-1"
-                        title="Borrar"
-                        onclick="confirm('¿Seguro que quieres borrar?')"
-                        ><i class="fas fa-trash text-danger"></i
-                      ></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </main>
 
