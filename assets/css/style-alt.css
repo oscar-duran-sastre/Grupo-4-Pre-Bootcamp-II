@@ -9,14 +9,10 @@
     background-color: #F8F9FA;
     font-size: 0.9rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 1px 1px 1px #250040;
+    text-shadow: 1px 1px 1px #000;
 }
 
-/*#search-index {
-    text-shadow: 1px 1px 1px #000;
-}*/
-
-.navbar {
+.navbar, #dropdown-nav-index, #footer-index {
     background: rgba(54,124,245,1);/* Old Browsers */
     background: -moz-linear-gradient(-45deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(54,124,245,1)), color-stop(37%, rgba(98,93,240,1)), color-stop(67%, rgba(34,30,92,1)), color-stop(100%, rgba(8,1,0,1)));/* Chrome, Safari4+ */
@@ -28,42 +24,66 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    opacity: 0.8;
+}
+
+.navbar {
+    font-size: 1.1rem;
 }
 
 #header-index {
-    border-bottom: 1px solid #67649A;
+    border-bottom: 1px solid #601085;
+    
 }
 
 #footer-index {
-    border-top: 1px solid #67649A;
+    border-top: 1px solid #601085;
+    height: 71px;
 }
 
 #dropdown-nav-index {
-    color: #F8F9FA;
+    border-radius: 12px;
+    border: 1px solid #601085;
 }
 
 .form-control {
-    border-radius: 20px;
-    border: 1px solid #67649A;
+    border-radius: 12px;
+    border: 1px solid #601085;
     background-color: #F8F9FA;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 238px;
 }
 
-#button-search-index {
-    border: 1px solid #67649A;
-    border-radius: 100%;
+.dashboard-index {
+    text-transform: uppercase;
 }
 
-#announcement-icon-index {
+#dropdown-icon-index {
+    width: 25px;
+}
+
+.dropdown-text-index {
+    color: #95A4CD;
+    font-size: 1.1rem;
+}
+
+.dropdown-text-index:hover {
+    color: #C0C0C2;
+}
+
+.fa-user-tag {
     color: #a2a2e5;
 }
   
-#announcement-icon-index {
+.fa-user-tag:hover {
     color: #8a8ace;
 }
-
+  
+.icon-tasks {
+    color: #ffbecc;
+}
+  
+.icon-tasks:hover {
+    color: #d78899;
+}
+  
 .fa-people {
     color: #49c549;
 }
@@ -87,5 +107,17 @@
 .fa-revisions:hover {
     color: #6d9aac;
 }
+
+@media (max-width: 767px) {
+    #header-index {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+@media (max-width: 767px) {
+    #footer-index {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
 
 /* END login y register */
