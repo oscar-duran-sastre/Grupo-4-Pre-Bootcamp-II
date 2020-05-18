@@ -6,13 +6,13 @@
     padding: 0;
 }
 .body-index {
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
     font-size: 0.9rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 1px 1px 1px #000;
 }
 
-.navbar, #dropdown-nav-index, #footer-index {
+.navbar, #footer-index {
     background: rgba(54,124,245,1);/* Old Browsers */
     background: -moz-linear-gradient(-45deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(54,124,245,1)), color-stop(37%, rgba(98,93,240,1)), color-stop(67%, rgba(34,30,92,1)), color-stop(100%, rgba(8,1,0,1)));/* Chrome, Safari4+ */
@@ -48,7 +48,7 @@
 .form-control {
     border-radius: 12px;
     border: 1px solid #601085;
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
 }
 
 .dashboard-index {
@@ -60,12 +60,12 @@
 }
 
 .dropdown-text-index {
-    color: #95A4CD;
+    color: #95a4cd;
     font-size: 1.1rem;
 }
 
 .dropdown-text-index:hover {
-    color: #C0C0C2;
+    color: #c0c0c2;
 }
 
 .fa-user-tag {
@@ -114,10 +114,10 @@
         border-bottom-right-radius: 12px;
     }
 
-@media (max-width: 767px) {
     #footer-index {
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
     }
+}
 
 /* END login y register */
