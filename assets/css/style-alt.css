@@ -1,18 +1,72 @@
 
-/* login y register */
+/* login */
 
-* {
+/** {
     margin: 0;
     padding: 0;
-}
-.body-index {
-    background-color: #f8f9fa;
+}*/
+
+.bodyIndex {
+    background-color: #ffffff;
     font-size: 0.9rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 1px 1px 1px #000;
 }
 
-.navbar, #footer-index {
+.abc {
+    border: solid red;
+}
+.cardRegister {
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    max-width: 768px;
+}
+
+.cardIndex {
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    max-width: 400px;
+}
+
+.footerIndex, .formLogin, .btnLogoIndex, .cardRegister, .cardIndex, .headerIndex, .btnRegister, .birthdayDayRegister, .birthdayMonthRegister, .birthdayYearRegister {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnLogoIndex, .btnRegister {
+    border-radius: 5px;
+}
+
+.titleCardRegister1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.titleCardRegister2 {
+    font-size: 1.2rem;
+}
+
+.birthdayLabelRegister, .textDownCardIndex, .textDownLogosIndex {
+    color: #495057;
+}
+
+.btnLogoNameIndex {
+    color: #6477e5;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/*.btnLogoIndex {
+    width: 160px;
+}*/
+
+.textDownCardIndex {
+    font-size: 0.6rem;
+}
+
+.formLogin, .birthdayDayRegister, .birthdayMonthRegister, .birthdayYearRegister {
+    border-radius: 5px;
+}
+
+.headerIndex, .footerIndex/*, .bodyIndex*/ {
     background: rgba(54,124,245,1);/* Old Browsers */
     background: -moz-linear-gradient(-45deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(54,124,245,1)), color-stop(37%, rgba(98,93,240,1)), color-stop(67%, rgba(34,30,92,1)), color-stop(100%, rgba(8,1,0,1)));/* Chrome, Safari4+ */
@@ -26,98 +80,125 @@
     background-position: center;
 }
 
-.navbar {
-    font-size: 1.1rem;
+    /*text-shadow: 1px 1px 1px #000;*/
+
+.headerIndex {
+    font-size: 1.2rem;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;*/
 }
 
-#header-index {
-    border-bottom: 1px solid #601085;
-    
+.footerIndex {
+    font-size: 0.8rem;
+    height: 50px;
+    /*position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
 }
 
-#footer-index {
-    border-top: 1px solid #601085;
-    height: 71px;
+.searchIndex {
+    border-radius: 20px;
+    height: 35px;
+    background-color: #ffffff;
 }
 
-#dropdown-nav-index {
-    border-radius: 12px;
-    border: 1px solid #601085;
-}
-
-.form-control {
-    border-radius: 12px;
-    border: 1px solid #601085;
-    background-color: #f8f9fa;
-}
-
-.dashboard-index {
+.shopIndex {
     text-transform: uppercase;
 }
 
-#dropdown-icon-index {
-    width: 25px;
-}
-
-.dropdown-text-index {
-    color: #95a4cd;
-    font-size: 1.1rem;
-}
-
-.dropdown-text-index:hover {
-    color: #c0c0c2;
-}
-
-.fa-user-tag {
-    color: #a2a2e5;
-}
-  
-.fa-user-tag:hover {
-    color: #8a8ace;
-}
-  
-.icon-tasks {
-    color: #ffbecc;
-}
-  
-.icon-tasks:hover {
-    color: #d78899;
-}
-  
-.fa-people {
-    color: #49c549;
-}
-  
-.fa-people:hover {
-    color: #39b239;
-}
-  
-.fa-pages {
-    color: #ffdf87;
-}
-  
-.fa-pages:hover {
-    color: #e6c465;
-}
-  
-.fa-revisions {
-    color: #9ac4d5;
-}
-  
-.fa-revisions:hover {
-    color: #6d9aac;
-}
+/*#mit-license-index {
+    background-color: #f8f9fa;
+    text-align: justify;
+    width: 600px;
+    height: 600px;
+    overflow: auto;
+    text-shadow: none;
+    border: none;
+}*/
 
 @media (max-width: 767px) {
-    #header-index {
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;
+
+    .headerIndex {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
-    #footer-index {
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
+    .footerIndex {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 }
 
-/* END login y register */
+/*@media (min-width: 768px) {
+
+    .headerIndex {
+        height: 50px;
+    }
+
+    .searchIndex {
+        height: 30px;
+    }
+}*/
+
+/*@media (min-width: 768px) {
+    .cardRegister {
+        min-width: 750px;
+        max-width: 950px;
+    }
+}*/
+
+/*animated dropdown*/
+
+/* Change this breakpoint if you change the breakpoint of the navbar */
+
+/*@media (min-width: 768px) {
+
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+  
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+  
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+  }
+  
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }*/
+
+/*END animated dropdown*/
+
+/* END login */
