@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Common</title>
+    <title>Listado de páginas</title>
     <link rel="icon" href="favicon.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/4d73159aa5.js"
@@ -125,12 +125,77 @@
           <main class="row mt-n3 mt-md-n5 px-md-3">
             <div class="col bg-light mx-3 rounded">
               <div class="mb-5 mt-4 d-flex">
-                <h1 class="text-dark flex-grow-1">Título de la sección</h1>
-                <a href="#" type="button" class="btn btn-blue mx-2">
-                  <span class="d-none d-md-inline">Botón</span>
+                <h1 class="text-dark flex-grow-1">Listado de Páginas</h1>
+                <a
+                  href="pages-new.html"
+                  type="button"
+                  class="btn btn-blue mx-2"
+                >
+                  <span class="d-none d-md-inline">Añadir</span>
                   <i class="fas fa-plus"></i>
                 </a>
               </div>
+              <table class="table table-responsive-md">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-secondary">NOMBRE</th>
+                    <th scope="col" class="text-center text-secondary">
+                      ENLACES
+                    </th>
+                    <th scope="col" class="text-center text-secondary">
+                      PUBLICADA
+                    </th>
+                    <th class="text-center">ADJUNTO</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      Apuntes 101
+                    </th>
+                    <td>
+                      <ul class="links-list">
+                        <li><a href="#">powerpoint clase</a></li>
+                        <li><a href="#">resolución ejercicios</a></li>
+                      </ul>
+                    </td>
+                    <td class="text-center">
+                      <input
+                        type="checkbox"
+                        name="pagePublished"
+                        disabled
+                        checked
+                      />
+                    </td>
+                    <td class="text-center">
+                      <i
+                        class="fas fa-file-word mx-1"
+                        title="ejercicios.doc"
+                      ></i>
+                      <i
+                        class="fas fa-file-image mx-1"
+                        title="graficos.png"
+                      ></i>
+                    </td>
+                    <td>
+                      <a
+                        href="pages-edit.html"
+                        class="text-reset mx-1"
+                        title="Editar"
+                        ><i class="fas fa-edit text-success"></i
+                      ></a>
+                      <a
+                        href="pages-delete.html"
+                        class="text-reset mx-1"
+                        title="Borrar"
+                        onclick="confirm('¿Seguro que quieres borrar?')"
+                        ><i class="fas fa-trash text-danger"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </main>
 

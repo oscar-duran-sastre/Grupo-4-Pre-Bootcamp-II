@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agregar Persona</title>
+    <title>Editar Página</title>
     <link rel="icon" href="favicon.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/4d73159aa5.js"
@@ -15,6 +15,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="style.css" />
 
     <script
@@ -123,16 +124,16 @@
           </header>
 
           <main class="row mt-n3 mt-md-n5 px-md-3">
-            <div class="col mx-3 bg-light rounded">
+            <div class="col bg-light mx-3 rounded">
               <div class="mb-5 mt-4 d-flex">
-                <h1 class="text-dark flex-grow-1">Crear Persona</h1>
+                <h1 class="text-dark flex-grow-1">Editar Página</h1>
                 <button type="button" class="btn btn-success">
                   <i class="fas fa-save color-white mr-md-2" title="Guardar"></i
                   ><span class="d-none d-md-inline">Guardar</span>
                 </button>
 
                 <a
-                  href="people-list.html"
+                  href="pages-list.html"
                   class="btn btn-danger mx-2"
                   title="Salir sin guardar"
                 >
@@ -143,97 +144,106 @@
               <div class="row">
                 <div class="col-12 col-md-6">
                   <form action="">
-                    <label
-                      for="userName"
-                      class="font-weight-bold text-secondary"
-                      >Nombre</label
-                    >
-                    <input
-                      type="text"
-                      placeholder="Nombre Apellido"
-                      class="form-control mb-4"
-                      id="userName"
-                    />
-                    <label for="" class="font-weight-bold text-secondary"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control mb-4"
-                      placeholder="ejemplo@email.com"
-                    />
-
-                    <span class="font-weight-bold text-secondary">Rol</span>
-                    <div class="form-check mt-2">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="role"
-                        id="teacher"
-                        value="teacher"
-                      />
-                      <label class="form-check-label" for="teacher">
-                        Profesor
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="role"
-                        id="student"
-                        value="student"
-                      />
-                      <label class="form-check-label" for="student">
-                        Estudiante
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="role"
-                        id="asTeacher"
-                        value="asTeacher"
-                      />
-                      <label class="form-check-label" for="asTeacher">
-                        Profesor Auxiliar
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="role"
-                        id="designer"
-                        value="designer"
-                      />
-                      <label class="form-check-label" for="designer">
-                        Diseñador
-                      </label>
-                    </div>
-                    <div class="form-check mb-4">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="role"
-                        id="watcher"
-                        value="watcher"
-                      />
-                      <label class="form-check-label" for="watcher">
-                        Observador
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        type="checkbox"
-                        id="activeUser"
-                        name="activeUser"
-                        class="form-check-input"
-                        checked
-                      /><label class="form-check-label" for="activeUser"
-                        >Activo</label
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Nombre</label
                       >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Apuntes 101"
+                      />
+                    </div>
+                    <div class="form-group mt-4">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Adjuntar enlaces</label
+                      >
+                      <div>
+                        <i class="fas fa-link mr-2"></i
+                        ><a href="#">powerpointclase</a
+                        ><i
+                          class="fas fa-times ml-3 text-danger"
+                          title="eliminar enlace"
+                        ></i>
+                      </div>
+                      <input
+                        type="url"
+                        class="form-control mt-2"
+                        placeholder="https://www.enlace.es/"
+                      />
+                    </div>
+
+                    <div class="form-group mt-4">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Adjuntar archivos</label
+                      >
+                      <div class="mb-2">
+                        <i
+                          class="fas fa-file-word mx-1"
+                          title="ejercicios.doc"
+                        ></i
+                        ><span>Ejercicios.doc</span>
+                        <i
+                          class="fas fa-times ml-3 text-danger"
+                          title="eliminar archivo"
+                        ></i>
+                      </div>
+                      <div class="mb-2">
+                        <i
+                          class="fas fa-file-image mx-1"
+                          title="graficos.png"
+                        ></i
+                        ><span>Gráficos.png</span
+                        ><i
+                          class="fas fa-times ml-3 text-danger"
+                          title="eliminar archivo"
+                        ></i>
+                      </div>
+                      <input type="file" class="form-control-file" />
+                    </div>
+
+                    <div class="form-group mt-4 mb-5">
+                      <label
+                        for="content"
+                        class="font-weight-bold text-secondary"
+                        >Contenido:</label
+                      >
+                      <textarea
+                        name="content"
+                        id="cont"
+                        class="form-control"
+                        rows="20"
+                      >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, commodi corporis ipsa aspernatur illo facere sunt ea incidunt doloremque adipisci quibusdam accusantium eos rerum sed earum consectetur blanditiis doloribus voluptatem!
+                      Quos, ad doloribus dolore alias veritatis voluptate minus soluta voluptates delectus facilis aliquam perferendis asperiores exercitationem fuga nisi obcaecati aspernatur corrupti illo.
+                      </textarea>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="pagePublish"
+                        value="pagePublish"
+                        id="pagePublish"
+                        checked
+                      />
+                      <label class="form-check-label" for="pagePublish">
+                        Publicar Página
+                      </label>
+                    </div>
+                    <div class="form-check mb-5">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="pageChange"
+                        value="pageChange"
+                        id="pageChange"
+                        checked
+                      />
+                      <label class="form-check-label" for="pageChange" checked>
+                        Notificar a los usuarios si el contenido ha cambiado
+                      </label>
                     </div>
                   </form>
                 </div>
