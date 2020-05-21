@@ -53,6 +53,10 @@ textarea {
   background-color: #f8fafd;
 }
 
+.links-list {
+  list-style: none;
+}
+
 /* panel lateral y header */
 
 .icons-wrap {
@@ -235,6 +239,29 @@ header {
 }
 
 /* END login y register */
+
+/* TIENDA ONLINE */
+
+.header-store {
+  height: 70px;
+}
+
+.store-text-lg {
+  font-size: 1.2rem;
+}
+
+.btn-language {
+  border: none;
+  background-color: none;
+}
+
+.flag-size {
+  height: 15px;
+}
+
+.icon-cart {
+  font-size: 1.4rem;
+}
 
 /* MEDIA QUERIE PARA MOBILE */
 
