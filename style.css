@@ -259,8 +259,35 @@ header {
   height: 15px;
 }
 
-.icon-cart {
-  font-size: 1.4rem;
+.portrait {
+  width: 50px;
+}
+
+.portrait-big {
+  width: 60px;
+}
+
+.text-small {
+  font-size: 0.7rem;
+}
+
+.price-tag {
+  font-size: 1.2rem;
+}
+
+.content-box {
+  height: 100px;
+  overflow-y: scroll;
+  font-size: 0.8rem;
+}
+
+.content-box ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.no-underline:hover {
+  text-decoration: none;
 }
 
 /*TIENDA ONLINE NAVEGACION IZQUIERDA*/

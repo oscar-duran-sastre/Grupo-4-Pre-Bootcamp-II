@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda online</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <script
+      src="https://kit.fontawesome.com/4d73159aa5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header-store border border-secondary mb-2">
+        <div
+          class="col-12 navbar navbar-expand-md navbar-light bg-light fixed-top"
+        >
+          <div class="navbar-brand mr-md-4">
+            <img
+              src="assets/img/logos/logoazul.png"
+              alt="logo"
+              height="45px;"
+              class="pb-1"
+            />
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="toggler-button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <a href="store.html" class="nav-link store-text-lg text-secondary"
+              >Cursos</a
+            >
+            <a
+              href="announcement-list.html"
+              class="nav-link store-text-lg text-secondary"
+              >Tablero</a
+            >
+            <form class="form-inline ml-auto">
+              <div class="input-group border border-secondary rounded-pill">
+                <div class="input-group-prepend">
+                  <button
+                    class="btn btn-outline-white"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    <i class="fas fa-search text-secondary mr-2"></i>
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  class="form-control border-0 bg-transparent"
+                  placeholder="Buscar"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+            </form>
+            <a href="store-cart.html" class="text-reset nav-link"
+              ><i
+                class="fas fa-shopping-cart icon-cart"
+                title="Ir al carrito"
+              ></i
+            ></a>
+
+            <div class="dropdown nav-item">
+              <button
+                class="btn btn-language dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/img/flagSpain.png"
+                  alt="español"
+                  class="flag-size"
+                />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="assets/img/flagGalicia.png"
+                    alt="galego"
+                    class="flag-size"
+                /></a>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="assets/img/flagUS.svg"
+                    alt="english"
+                    class="flag-size"
+                /></a>
+              </div>
+            </div>
+
+            <a href="index.html" class="nav-link">Inicia sesión</a>
+            <a href="register.html" class="btn btn-success nav-item"
+              >REGÍSTRATE</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <img
+                src="assets/img/photosCourse/course01.png"
+                alt=""
+                class="border border-secondary img-fluid"
+              />
+            </div>
+            <div class="col-md-5">
+              <h2>Cocina creativa</h2>
+
+              <div class="d-flex justify-content-end align-items-end">
+                <p class="mr-3">Por <a href="">Lorem Mc.Ipsum</a></p>
+                <img
+                  src="assets/img/photosCourse/teacher01.jpg"
+                  alt=""
+                  class="portrait-big rounded-circle"
+                />
+              </div>
+              <p class="font-weight-bolder">Contenido:</p>
+              <div class="content-box bg-light">
+                <ul>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 01:
+                    diferencias entre cuchara y tenedor.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 02: cortar
+                    zanahorias como un pro.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Ejercicio: Pelar una
+                    piña.pdf
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 03: la
+                    tortilla perfecta.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 04: todo
+                    sobre los pepinillos.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 05: dominar
+                    la batidora.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 06: el
+                    soufflé perfecto.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 07: officia
+                    ut ullam consectetur minus sequis.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 08: facere
+                    aut enim ipsam unde nulla vero hic.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 09: facere
+                    aut enim ipsam unde nulla vero hic.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 10: facere
+                    aut enim ipsam unde nulla vero hic.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 11: facere
+                    aut enim ipsam unde nulla vero hic.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 12: facere
+                    aut enim ipsam unde nulla vero hic.vid
+                  </li>
+                  <li>
+                    <i class="fas fa-video-slash mr-2"></i>Lección 13: facere
+                    aut enim ipsam unde nulla vero hic.vid
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <h2 class="my-0 mr-3">189€</h2>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-lg mt-3 rounded-pill"
+                >
+                  AÑADIR AL CARRITO <i class="fas fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-11 mt-4">
+              <h4 class="mb-3">Descripción del curso:</h4>
+              <p>
+                Con este curso, sit amet consectetur adipisicing elit. Nesciunt
+                ducimus maxime commodi ratione, veniam enim, ut distinctio
+                perferendis nulla numquam animi consectetur quis vitae eaque
+                saepe. Nihil suscipit ipsam deleniti? Eius ex, blanditiis
+                perspiciatis voluptate nemo, quia ad fugiat qui eaque temporibus
+                fuga harum doloremque, iste voluptas voluptatibus praesentium
+                magni at distinctio molestiae tenetur voluptatem aliquid?
+                Exercitationem optio quasi saepe. Assumenda nobis, nulla
+                impedit, dolore aperiam dolores quibusdam quisquam laborum, modi
+                repellendus dignissimos pariatur similique? Minima ullam eum
+                eligendi nemo repellendus? Minus eos nostrum recusandae quidem
+                asperiores molestiae dolores libero!
+              </p>
+              <p>
+                El temario incluye
+              </p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, repudiandae sed molestias tempora nam in praesentium,
+                  facilis qui vitae magni, earum ullam eveniet fugiat
+                  voluptatibus esse excepturi doloribus nemo consequatur.
+                </li>
+                <li>
+                  Odit debitis quia, at reiciendis necessitatibus, nisi
+                  consectetur a itaque quisquam unde, nostrum enim velit. Illum
+                  vel doloremque in nemo molestiae aliquam.
+                </li>
+                <li>Animi hic porro iure amet sint!</li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laborum vitae officia placeat perspiciatis ab architecto at
+                  dolorem mollitia quo.
+                </li>
+                <li>
+                  Quam, magnam nisi, culpa animi a obcaecati aspernatur quidem
+                  veritatis odio dolores beatae fugit vitae fuga nobis laborum
+                  neque. Recusandae, corporis rerum.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 mb-3">
+              <h4>Opiniones de alumnos:</h4>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mt-2">
+              <div class="border-secondary bg-light rounded mx-1 p-2">
+                <h6 class="font-weight-bolder">Mola cantidubi</h6>
+                <p class="text-small">
+                  Lo mejor del curso fue lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Praesentium iure tempore molestiae et.
+                  <a href="#">Leer más.</a>
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <i class="fas fa-star text-warning text-small"></i>
+                    <i class="fas fa-star text-warning text-small"></i>
+                    <i class="fas fa-star text-warning text-small"></i>
+                    <i class="fas fa-star text-warning text-small"></i
+                    ><i
+                      class="fas fa-star-half-alt ml-1 text-warning text-small"
+                    ></i>
+                  </div>
+                  <span class="text-small">Alumno F. Student</span>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-2">
+              <div class="border-secondary bg-light rounded mx-1 p-2">
+                <h6 class="font-weight-bolder">Mola lo justo</h6>
+                <p class="text-small">
+                  Lo mejor del curso fue lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Praesentium iure tempore molestiae et.
+                  <a href="#">Leer más.</a>
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <i class="fas fa-star text-warning text-small"></i>
+                    <i class="fas fa-star text-warning text-small"></i>
+                    <i class="fas fa-star text-warning text-small"></i>
+                    <i class="far fa-star text-warning text-small"></i
+                    ><i class="far fa-star ml-1 text-warning text-small"></i>
+                  </div>
+                  <span class="text-small">Alumna Estudi</span>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-2">
+              <div class="border-secondary bg-light rounded mx-1 p-2">
+                <h6 class="font-weight-bolder">No mola nada</h6>
+                <p class="text-small">
+                  Lo peor del curso fue lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Praesentium iure tempore molestiae et.
+                  <a href="#">Leer más.</a>
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <div>
+                    <i class="fas fa-star text-warning text-small"></i>
+                    <i class="fas fa-star text-warning text-small"></i>
+                    <i class="far fa-star text-warning text-small"></i>
+                    <i class="far fa-star text-warning text-small"></i
+                    ><i class="far fa-star ml-1 text-warning text-small"></i>
+                  </div>
+                  <span class="text-small">Estudiante D. Incógnito</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-12 mt-3 mb-2">
+              <h4>También te podría interesar:</h4>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course05.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cables y cosas</h5>
+                  <div class="d-flex flex-column mb-3">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorem Mc.Ipsum</span>
+                      <img
+                        src="assets/img/photosCourse/teacher04.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i
+                      ><i class="fas fa-star-half-alt ml-1 text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">129€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course06.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Calculadora 101</h5>
+                  <div class="d-flex flex-column mb-3">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorena Ipsumina</span>
+                      <img
+                        src="assets/img/photosCourse/teacher09.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i
+                      ><i class="far fa-star ml-1 text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">99€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course07.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Costura avanzada</h5>
+                  <div class="d-flex flex-column mb-3">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorena Ipsumina</span>
+                      <img
+                        src="assets/img/photosCourse/teacher07.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star-half-alt ml-1 text-warning"></i>
+                      <i class="far fa-star ml-1 text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">59€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course08.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Marketing</h5>
+                  <div class="d-flex flex-column mb-3">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorem Mc.Ipsum</span>
+                      <img
+                        src="assets/img/photosCourse/teacher08.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">149€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
