@@ -263,6 +263,140 @@ header {
   font-size: 1.4rem;
 }
 
+/*TIENDA ONLINE NAVEGACION IZQUIERDA*/
+
+.bodyStore {
+  margin-bottom: 55px;
+}
+
+.footerStore {
+  height: 65px;
+}
+
+.dropdown-toggle::after {
+  float: right;
+  margin-top: 8px;
+}
+
+/*.dropdown:hover .dropdown-menu {
+  display: block;
+}*/
+
+.circleShop1,
+.circleShop2,
+.circleShop3,
+.circleShop4,
+.circleShop5,
+.circleShop6,
+.circleShop7,
+.circleShop8,
+.circleShop9,
+.circleShop10 {
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.circleShop1 {
+  color: #333d85;
+}
+
+.circleShop2 {
+  color: #355ef5;
+}
+
+.circleShop3 {
+  color: #1597d2;
+}
+
+.circleShop4 {
+  color: #04b5c2;
+}
+
+.circleShop5 {
+  color: #20cf80;
+}
+
+.circleShop6 {
+  color: #b6df22;
+}
+
+.circleShop7 {
+  color: #ecc413;
+}
+
+.circleShop8 {
+  color: #ff7600;
+}
+
+.circleShop9 {
+  color: #fd5e2f;
+}
+
+.circleShop10 {
+  color: #e83011;
+}
+
+.titleNavLeftStore {
+  font-size: 1.2rem;
+}
+
+/*.dropdownTitlesNavLeftStore {
+  font-size: 0.9rem;
+}
+
+.dropdownTitlesNavLeftStore {
+  font-size: 0.7rem;
+}*/
+
+/*animated dropdown*/
+
+/* Change this breakpoint if you change the breakpoint of the navbar */
+
+/*@media (min-width: 768px) {
+
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+  
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+  
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+  }
+  
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }*/
+
 /* MEDIA QUERIE PARA MOBILE */
 
 @media (max-width: 767px) {

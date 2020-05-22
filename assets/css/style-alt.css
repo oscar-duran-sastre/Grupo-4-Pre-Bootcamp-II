@@ -89,7 +89,7 @@
 
 .footerIndex {
     font-size: 0.8rem;
-    height: 50px;
+    /*height: 500px;*/
     /*position: fixed;
     bottom: 0;
     left: 0;
@@ -102,9 +102,9 @@
     background-color: #ffffff;
 }
 
-.shopIndex {
+/*.shopIndex {
     text-transform: uppercase;
-}
+}*/
 
 /*#mit-license-index {
     background-color: #f8f9fa;
