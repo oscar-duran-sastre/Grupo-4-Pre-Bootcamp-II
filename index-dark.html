@@ -10,7 +10,7 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style-alt.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style-alt-dark.css" type="text/css">
     <title>Inicio</title>
 </head>
 <body class="bodyIndex">
@@ -24,10 +24,10 @@
         </button>    
         <div class="collapse navbar-collapse" id="navbarsExample04">
             <ul class="navbar-nav mr-auto ml-2">
-                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="register.html">Registro</a></li>
+                <li class="nav-item active"><a class="nav-link" href="index-dark.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="register-dark.html">Registro</a></li>
                 <li class="nav-item"><a class="nav-link" href="store.html"><span class="shopIndex">Cursos</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="index-dark.html"><span class="shopIndex"><i class="fas fa-adjust themeIndex" title="Activar modo oscuro"></i></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html"><span class="shopIndex"><i class="fas fa-adjust themeIndex" title="Desactivar modo oscuro"></i></span></a></li>
             </ul>
             <form class="form my-2 my-md-0">
                 <input class="form-control searchIndex" type="text" placeholder="Buscar">
@@ -54,33 +54,52 @@
                     <div class="row px-5 pt-4 pb-3">
                         <div class="row">
                         <div class="col-12"><p class="titleCardRegister">
-                            <span class="titleCardRegister1">¿Problemas?</span></br>
-                            <span class="titleCardRegister2">Ingresa tu correo electrónico y te enviaremos un enlace para recuperar tu cuenta:</span> </p>
+                            <span class="titleCardRegister1">Accede </span></br>
+                            <span class="titleCardRegister2">a tu tablero con:</span> </p>
                         </div>
                         </div>
                         <form>
                         <div class="form-row">
+                            <div class="form-group-row col-6 d-flex justify-content-center justify-content-md-end mt-4 pr-md-3">                    
+                                <a href="https://github.com" class="btn btn-light btn-icon btnLogoIndex" target="_top">
+                                    <span class="btnLogoNameIndex"><img src="assets/img/logos/github.svg" /> Github</span>
+                                </a>                       
+                            </div>
+                            <div class="form-group-row col-6 d-flex justify-content-center justify-content-md-start mt-4 pl-md-3">                     
+                                <a href="https://google.com" class="btn btn-light btn-icon btnLogoIndex" target="_top">
+                                    <span class="btnLogoNameIndex"><img src="assets/img/logos/google.svg" /> Google</span>
+                                </a>                       
+                            </div>
                             <div class="form-group-row col-12 mt-5">
-                                <input type="email" class="form-control formLogin" placeholder="Correo electrónico">
+                                <span class="textDownLogosIndex">O inicia sesión:</span>
+                            </div>
+                            <div class="form-group-row col-12 mt-2">
+                                <input type="text" class="form-control formLogin" placeholder="Nombre de usuario">
+                            </div>
+                            <div class="form-group-row col-md-12 mt-3">
+                                <input type="password" class="form-control formLogin" placeholder="Contraseña">
                             </div>
                                 <div class="form-group-row col-md-5 mt-3">
                                     <span class="licenseSelectorRegister" data-type="selectors">
-                                        <div class="form-check form-check-inline col-12 ml-1">                                        
+                                        <div class="form-check form-check-inline col-12 ml-1">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">
+                                        <span class="birthdayLabelRegister">Recuérdame</span></label>
                                         </div>
                                     </span>
                                 </div> 
                             <div class="form-group col-12 d-flex justify-content-center mt-3">
-                                <a class="btn btn-primary btn-lg btnRegister" href="announcement-list.html" role="button">Enviar</a>
+                                <a class="btn btn-primary btn-lg btnRegister" href="announcement-list.html" role="button">Acceder</a>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-start">
-                                <a href="index.html" class="text-dark" target="_top">
-                                <span class="textDownCardIndex">Iniciar sesión</span></a>
+                                <a href="register-dark.html" class="text-dark" target="_top">
+                                <span class="textDownCardIndex">Crear una nueva cuenta</span></a>
                             </div>
                             <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end mt-2 mt-md-0">
-                                <a href="register.html" class="text-dark" target="_top">
-                                <span class="textDownCardIndex">Crear una nueva cuenta</span></a>
+                                <a href="forgotten-password-dark.html" class="text-dark" target="_top">
+                                <span class="textDownCardIndex">¿Se te olvidó tu contraseña?</span></a>
                             </div>
                         </div>
                         </form>
