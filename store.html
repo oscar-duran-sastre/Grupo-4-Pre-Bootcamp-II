@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda online</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <script
+      src="https://kit.fontawesome.com/4d73159aa5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header-store">
+        <div
+          class="col-12 navbar navbar-expand-md navbar-light bg-light fixed-top"
+        >
+          <div class="navbar-brand mr-md-4">
+            <img
+              src="assets/img/logos/logoazul.png"
+              alt="logo"
+              height="45px;"
+              class="pb-1"
+            />
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="toggler-button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <a href="store.html" class="nav-link store-text-lg text-secondary"
+              >Cursos</a
+            >
+            <a
+              href="announcement-list.html"
+              class="nav-link store-text-lg text-secondary"
+              >Tablero</a
+            >
+            <form class="form-inline ml-auto">
+              <div class="input-group border border-secondary rounded-pill">
+                <div class="input-group-prepend">
+                  <button
+                    class="btn btn-outline-white"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    <i class="fas fa-search text-secondary mr-2"></i>
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  class="form-control border-0 bg-transparent"
+                  placeholder="Buscar"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+            </form>
+            <a href="store-cart.html" class="text-reset nav-link"
+              ><i
+                class="fas fa-shopping-cart icon-cart"
+                title="Ir al carrito"
+              ></i
+            ></a>
+
+            <div class="dropdown nav-item">
+              <button
+                class="btn btn-language dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/img/flagSpain.png"
+                  alt="español"
+                  class="flag-size"
+                />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="assets/img/flagGalicia.png"
+                    alt="galego"
+                    class="flag-size"
+                /></a>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="assets/img/flagUS.svg"
+                    alt="english"
+                    class="flag-size"
+                /></a>
+              </div>
+            </div>
+
+            <a href="index.html" class="nav-link">Inicia sesión</a>
+            <a href="register.html" class="btn btn-success nav-item"
+              >REGÍSTRATE</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <nav
+          class="col-12 col-md-2 d-flex justify-content-start navbar navbar-expand-xs navbar-light bg-light align-items-start"
+        >
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link text-secondary titleNavLeftStore" href="#"
+                >Categorías</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#"
+                ><i class="fas fa-circle circleShop1"></i> Destacados</a
+              >
+              <ul class="nav">
+                <a class="dropdown-item text-secondary" href="#"
+                  >Lorem ipsum dolor sit</a
+                >
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop2"></i> Tecnología</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop3"></i> Negocio</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop4"></i> Productividad</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop5"></i> Idiomas</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop6"></i> Ocio y vida</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop7"></i> Cocina</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop8"></i> Cultura</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop9"></i> Ciencias Naturales</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="fas fa-circle circleShop10"></i> Ciencias
+                Aplicadas</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-secondary" href="#">Lorem</a>
+                <a class="dropdown-item text-secondary" href="#">Ipsum</a>
+                <a class="dropdown-item text-secondary" href="#">Dolor</a>
+                <a class="dropdown-item text-secondary" href="#">Sit</a>
+                <a class="dropdown-item text-secondary" href="#">Amet</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-12 mt-3 mb-2">
+              <h3>Novedades</h3>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-4">
+            <a href="store-detail.html" class="text-reset no-underline">
+              <div class="col mb-4">
+                <div class="card">
+                  <img
+                    src="assets/img/photosCourse/course01.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cocina creativa</h5>
+                    <div class="d-flex flex-column mb-2">
+                      <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                      </p>
+                      <div class="ml-auto">
+                        <span class="text-small">Lorem Mc.Ipsum</span>
+                        <img
+                          src="assets/img/photosCourse/teacher01.jpg"
+                          alt=""
+                          class="rounded-circle portrait"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center border-top"
+                    >
+                      <div>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i
+                        ><i class="fas fa-star-half-alt ml-1 text-warning"></i>
+                      </div>
+                      <div class="font-weight-bolder price-tag">189€</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course02.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yoga para novatos</h5>
+                  <div class="d-flex flex-column mb-2">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorena Ipsumina</span>
+                      <img
+                        src="assets/img/photosCourse/teacher03.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i
+                      ><i class="far fa-star ml-1 text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">80€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course03.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Guitarra en 2 meses</h5>
+                  <div class="d-flex flex-column mb-2">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorem Mc.Ipsum</span>
+                      <img
+                        src="assets/img/photosCourse/teacher02.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star-half-alt ml-1 text-warning"></i
+                      ><i class="far fa-star ml-1 text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">109€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course04.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Javascript moderno</h5>
+                  <div class="d-flex flex-column mb-2">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorena Ipsumina</span>
+                      <img
+                        src="assets/img/photosCourse/teacher05.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">289€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mt-3 mb-2">
+              <h3>Visitados recientemente</h3>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course05.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cables y cosas</h5>
+                  <div class="d-flex flex-column mb-2">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorem Mc.Ipsum</span>
+                      <img
+                        src="assets/img/photosCourse/teacher04.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i
+                      ><i class="fas fa-star-half-alt ml-1 text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">129€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course06.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Calculadora 101</h5>
+                  <div class="d-flex flex-column mb-2">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorena Ipsumina</span>
+                      <img
+                        src="assets/img/photosCourse/teacher09.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i
+                      ><i class="far fa-star ml-1 text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">99€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course07.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Costura avanzada</h5>
+                  <div class="d-flex flex-column mb-2">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorena Ipsumina</span>
+                      <img
+                        src="assets/img/photosCourse/teacher07.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star-half-alt ml-1 text-warning"></i
+                      ><i class="far fa-star ml-1 text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">59€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img
+                  src="assets/img/photosCourse/course08.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Marketing</h5>
+                  <div class="d-flex flex-column mb-2">
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="ml-auto">
+                      <span class="text-small">Lorem Mc.Ipsum</span>
+                      <img
+                        src="assets/img/photosCourse/teacher08.jpg"
+                        alt=""
+                        class="rounded-circle portrait"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center border-top"
+                  >
+                    <div>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <div class="font-weight-bolder price-tag">149€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
