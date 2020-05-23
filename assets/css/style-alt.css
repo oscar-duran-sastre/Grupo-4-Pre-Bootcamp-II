@@ -116,7 +116,7 @@
     border: none;
 }*/
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 
     .headerIndex {
         border-bottom-left-radius: 20px;
@@ -127,7 +127,7 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
-}
+}*/
 
 /* ¿Qué carallo es esto? */
 /*.carousel-inner 

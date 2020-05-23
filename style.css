@@ -293,78 +293,109 @@ header {
 /*TIENDA ONLINE NAVEGACION IZQUIERDA*/
 
 .bodyStore {
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 
-.footerStore {
-  height: 65px;
-}
-
-.dropdown-toggle::after {
-  float: right;
-  margin-top: 8px;
-}
-
-/*.dropdown:hover .dropdown-menu {
-  display: block;
+/*.header-store {
+  position: absolute;
 }*/
 
-.circleShop1,
-.circleShop2,
-.circleShop3,
-.circleShop4,
-.circleShop5,
-.circleShop6,
-.circleShop7,
-.circleShop8,
-.circleShop9,
-.circleShop10 {
-  font-size: 0.9rem;
-  text-shadow: 1px 1px 1px #000;
+.footerStore {
+  height: 70px;
 }
 
-.circleShop1 {
-  color: #333d85;
+.navLeft {
+  margin-top: 75px;
+  position: fixed;
+  /*position: -webkit-sticky;
+  position: sticky;
+  top: 20px;*/
+  /*position: static;*/
+  /*position: -webkit-sticky; /* Safari */
+  /*position: sticky;
+  /*top: 70px;*/
 }
 
-.circleShop2 {
-  color: #355ef5;
+.headerStore/*, .navLeft*/, .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.circleShop3 {
-  color: #1597d2;
-}
-
-.circleShop4 {
-  color: #04b5c2;
-}
-
-.circleShop5 {
-  color: #20cf80;
-}
-
-.circleShop6 {
-  color: #b6df22;
-}
-
-.circleShop7 {
-  color: #ecc413;
-}
-
-.circleShop8 {
-  color: #ff7600;
-}
-
-.circleShop9 {
-  color: #fd5e2f;
-}
-
-.circleShop10 {
-  color: #e83011;
-}
+/*.dropdown-toggle::after {
+  float: right;
+  margin-top: 8px;
+}*/
 
 .titleNavLeftStore {
   font-size: 1.2rem;
+}
+
+.tittleCategoriesNavLeftStore {
+  font-size: 1rem;
+  /*font-weight: bold;*/
+}
+
+.categoriesNavLeftStore {
+  font-size: 0.8rem;
+}
+
+.footerStore {
+  font-size: 0.8rem;
+}
+
+.Shop1,
+.Shop2,
+.Shop3,
+.Shop4,
+.Shop5,
+.Shop6,
+.Shop7,
+.Shop8,
+.Shop9,
+.Shop10 {
+  font-size: 1rem;
+  width: 25px;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #000;*/
+}
+
+.Shop1 {
+  color: #333d85;
+}
+
+.Shop2 {
+  color: #355ef5;
+}
+
+.Shop3 {
+  color: #1597d2;
+}
+
+.Shop4 {
+  color: #04b5c2;
+}
+
+.Shop5 {
+  color: #20cf80;
+}
+
+.Shop6 {
+  color: #b6df22;
+}
+
+.Shop7 {
+  color: #ecc413;
+}
+
+.Shop8 {
+  color: #ff7600;
+}
+
+.Shop9 {
+  color: #fd5e2f;
+}
+
+.Shop10 {
+  color: #e83011;
 }
 
 /* MEDIA QUERIE PARA MOBILE */
