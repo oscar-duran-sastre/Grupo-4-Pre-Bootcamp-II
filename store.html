@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda online</title>
     <link rel="icon" href="favicon.png" type="image/png" />
-    <script
-      src="https://kit.fontawesome.com/4d73159aa5.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/4d73159aa5.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -17,22 +14,23 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bodyStore">
+  <body>
     <div class="container-fluid">
+      
 <!-- header -->
       <div class="row header-store">
-        <div
-          class="col-12 navbar navbar-expand-md navbar-light bg-light fixed-top headerStore"
-        >
+        <div class="col-12 navbar navbar-expand-md navbar-light bg-light fixed-top headerStore">
           <div class="navbar-brand mr-md-4">
-            <img
-              src="assets/img/logos/logoazul.png"
-              alt="logo"
-              height="45px;"
-              class="pb-1"
-            />
+            <a href="landing.html">
+              <img
+                src="assets/img/logos/logoazul.png"
+                alt="Logo de empresa AON"
+                title="Sobre nosotros"
+                height="45px;"
+                class="pb-1"
+              />
+            </a>
           </div>
-
           <button
             class="navbar-toggler"
             type="button"
@@ -41,47 +39,19 @@
             aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            id="toggler-button"
-          >
+            id="toggler-button">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <a href="store.html" class="nav-link store-text-lg text-secondary"
-              >Cursos</a
-            >
-            <a
-              href="announcement-list.html"
-              class="nav-link store-text-lg text-secondary"
-              >Tablero</a
-            >
-            <form class="form-inline ml-auto">
-              <div class="input-group border border-secondary rounded-pill">
-                <div class="input-group-prepend">
-                  <button
-                    class="btn btn-outline-white"
-                    type="button"
-                    id="button-addon1"
-                  >
-                    <i class="fas fa-search text-secondary mr-2"></i>
-                  </button>
-                </div>
-                <input
-                  type="text"
-                  class="form-control border-0 bg-transparent"
-                  placeholder="Buscar"
-                  aria-label="Example text with button addon"
-                  aria-describedby="button-addon1"
-                />
-              </div>
-            </form>
-            <a href="store-cart.html" class="text-reset nav-link"
-              ><i
-                class="fas fa-shopping-cart icon-cart"
-                title="Ir al carrito"
-              ></i
-            ></a>
-
+            <ul class="navbar-nav mr-auto">
+              <!-- <li class="nav-item store-text-lg"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item store-text-lg"><a class="nav-link" href="register.html">Registro</a></li> -->
+              <li class="nav-item active store-text-lg"><a class="nav-link" href="#">Cursos</a></li>
+              <li class="nav-item store-text-lg"><a class="nav-link" href="index.html">Tablero</a></li>
+            </ul>
+            <a href="store-cart.html" class="text-reset nav-link ml-auto">
+              <i class="fas fa-shopping-cart icon-cart" title="Ir al carrito"></i>
+            </a>
             <div class="dropdown nav-item">
               <button
                 class="btn btn-language dropdown-toggle"
@@ -112,11 +82,36 @@
                 /></a>
               </div>
             </div>
+            
+            <!-- <a href="#" class="nav-link store-text-lg text-secondary">Cursos</a>
+            <a href="announcement-list.html" class="nav-link store-text-lg text-secondary">Tablero</a> -->
+            
+            <form class="form-inline my-3 my-md-0 ml-md-1">
 
+              <!-- Reemplazo búsqueda para solucionar que aura azul no correspondía con forma de píldora e igualar estilo a través del site -->
+              <!-- <div class="input-group border border-secondary rounded-pill">
+                <div class="input-group-prepend">
+                  <button
+                    class="btn btn-outline-white"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    <i class="fas fa-search text-secondary mr-2"></i>
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  class="form-control border-0 bg-transparent"
+                  placeholder="Buscar"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div> -->
+
+              <input class="form-control searchStore" type="text" placeholder="Buscar">
+            </form>
             <a href="index.html" class="nav-link">Inicia sesión</a>
-            <a href="register.html" class="btn btn-success nav-item"
-              >REGÍSTRATE</a
-            >
+            <a href="register.html" class="btn btn-success nav-item">Regístrate</a>
           </div>
         </div>
       </div>
@@ -596,13 +591,15 @@
 <!-- END nav left + main -->
 
 <!-- footer -->
-      <nav class="navbar navbar-expand navbar-light bg-light fixed-bottom footerStore justify-content-center justify-content-md-end">
-        <ul class="navbar-nav">
-            <li class="nav-item px-1"><a class="nav-link" href="landing.html">Sobre nosotros</a></li>
-            <li class="nav-item px-1"><a class="nav-link" href="https://www.gonzalezlopez.dev/">Blog</a></li> 
-            <li class="nav-item px-1"><a class="nav-link" href="https://www.mit.edu/~amini/LICENSE.md">Licencia MIT</a></li>               
-        </ul>
-      </nav>
+      <div class="row">
+        <nav class="col-12 navbar navbar-expand navbar-light bg-faded sticky-bottom footerStore justify-content-center justify-content-md-end">
+          <ul class="navbar-nav">
+              <li class="nav-item px-1"><a class="nav-link" href="landing.html">Sobre nosotros</a></li>
+              <li class="nav-item px-1"><a class="nav-link" href="https://www.gonzalezlopez.dev/">Blog</a></li> 
+              <li class="nav-item px-1"><a class="nav-link" href="https://www.mit.edu/~amini/LICENSE.md">Licencia MIT</a></li>               
+          </ul>
+        </nav>
+      </div>
 <!-- END footer -->
 
     </div>

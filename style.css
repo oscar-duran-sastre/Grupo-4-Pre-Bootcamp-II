@@ -242,6 +242,12 @@ header {
 
 /* TIENDA ONLINE */
 
+.searchStore {
+  border-radius: 20px;
+  height: 35px;
+  background-color: #ffffff;
+}
+
 .header-store {
   height: 70px;
 }
@@ -292,15 +298,16 @@ header {
 
 /*TIENDA ONLINE NAVEGACION IZQUIERDA*/
 
-.bodyStore {
+/*.bodyStore {
   margin-bottom: 53px;
-}
+}*/
 
 /*.header-store {
   position: absolute;
 }*/
 
 .footerStore {
+  font-size: 0.8rem;
   height: 70px;
 }
 
@@ -316,7 +323,13 @@ header {
   /*top: 70px;*/
 }
 
-.headerStore/*, .navLeft*/, .card {
+/*.footerStore {
+  position: relative;
+}*/
+
+.headerStore,  
+.card, 
+.searchStore {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -338,9 +351,11 @@ header {
   font-size: 0.8rem;
 }
 
-.footerStore {
-  font-size: 0.8rem;
-}
+/*.footerStore {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}*/
 
 .Shop1,
 .Shop2,

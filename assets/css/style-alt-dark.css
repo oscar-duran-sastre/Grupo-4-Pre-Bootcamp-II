@@ -14,21 +14,31 @@
 
 .cardRegister {
     border-radius: 20px;
-    background-color: #dadada;
+    background-color: #f5f5f5/*dadada*/;
     max-width: 768px;
 }
 
 .cardIndex {
     border-radius: 20px;
-    background-color: #dadada;
+    background-color: #f5f5f5/*dadada*/;
     max-width: 450px;
 }
 
-.footerIndex, .formLogin, .btnLogoIndex, .cardRegister, .cardIndex, .headerIndex, .btnRegister, .birthdayDayRegister, .birthdayMonthRegister, .birthdayYearRegister {
+/*.footerIndex,*/ 
+.formLogin, 
+.btnLogoIndex, 
+.cardRegister, 
+.cardIndex, 
+.headerIndex, 
+.btnRegister, 
+.birthdayDayRegister, 
+.birthdayMonthRegister, 
+.birthdayYearRegister {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btnLogoIndex, .btnRegister {
+.btnLogoIndex, 
+.btnRegister {
     border-radius: 5px;
 }
 
@@ -41,7 +51,9 @@
     font-size: 1rem;
 }
 
-.birthdayLabelRegister, .textDownCardIndex, .textDownLogosIndex {
+.birthdayLabelRegister, 
+.textDownCardIndex, 
+.textDownLogosIndex {
     color: #495057;
 }
 
@@ -59,11 +71,16 @@
     font-size: 0.6rem;
 }
 
-.formLogin, .birthdayDayRegister, .birthdayMonthRegister, .birthdayYearRegister {
+.formLogin, 
+.birthdayDayRegister, 
+.birthdayMonthRegister, 
+.birthdayYearRegister {
     border-radius: 5px;
 }
 
-.headerIndex, .footerIndex, .bodyIndex {
+.headerIndex, 
+.footerIndex, 
+.bodyIndex {
     background: rgba(54,124,245,1);/* Old Browsers */
     background: -moz-linear-gradient(-45deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(54,124,245,1)), color-stop(37%, rgba(98,93,240,1)), color-stop(67%, rgba(34,30,92,1)), color-stop(100%, rgba(8,1,0,1)));/* Chrome, Safari4+ */
@@ -116,7 +133,7 @@
     border: none;
 }*/
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 
     .headerIndex {
         border-bottom-left-radius: 20px;
@@ -127,7 +144,7 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
-}
+}*/
 
 /* ¿Qué carallo es esto? */
 /*.carousel-inner 
