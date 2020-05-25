@@ -12,6 +12,20 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.headerIndex {
+    background: rgba(54,124,245,1);/* Old Browsers */
+    background: -moz-linear-gradient(-45deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(54,124,245,1)), color-stop(37%, rgba(98,93,240,1)), color-stop(67%, rgba(34,30,92,1)), color-stop(100%, rgba(8,1,0,1)));/* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%); /* IE 10+ */
+    background: linear-gradient(135deg, rgba(54,124,245,1) 0%, rgba(98,93,240,1) 37%, rgba(34,30,92,1) 67%, rgba(8,1,0,1) 100%);/* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#367cf5', endColorstr='#080100', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 /*.footerIndex {
     position: relative;
 }*/
@@ -40,8 +54,8 @@
 .btnRegister, 
 .birthdayDayRegister, 
 .birthdayMonthRegister, 
-.birthdayYearRegister, 
-.searchIndex {
+.birthdayYearRegister/*, 
+.searchIndex*/ {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

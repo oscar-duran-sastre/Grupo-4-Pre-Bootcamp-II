@@ -296,15 +296,7 @@ header {
   text-decoration: none;
 }
 
-/*TIENDA ONLINE NAVEGACION IZQUIERDA*/
-
-/*.bodyStore {
-  margin-bottom: 53px;
-}*/
-
-/*.header-store {
-  position: absolute;
-}*/
+/* TIENDA ONLINE NAVEGACION IZQUIERDA */
 
 .footerStore {
   font-size: 0.8rem;
@@ -314,29 +306,12 @@ header {
 .navLeft {
   margin-top: 75px;
   position: fixed;
-  /*position: -webkit-sticky;
-  position: sticky;
-  top: 20px;*/
-  /*position: static;*/
-  /*position: -webkit-sticky; /* Safari */
-  /*position: sticky;
-  /*top: 70px;*/
 }
-
-/*.footerStore {
-  position: relative;
-}*/
 
 .headerStore,  
-.card, 
-.searchStore {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-/*.dropdown-toggle::after {
-  float: right;
-  margin-top: 8px;
-}*/
 
 .titleNavLeftStore {
   font-size: 1.2rem;
@@ -344,18 +319,11 @@ header {
 
 .tittleCategoriesNavLeftStore {
   font-size: 1rem;
-  /*font-weight: bold;*/
 }
 
 .categoriesNavLeftStore {
   font-size: 0.8rem;
 }
-
-/*.footerStore {
-  bottom: 0;
-  left: 0;
-  right: 0;
-}*/
 
 .Shop1,
 .Shop2,
@@ -370,7 +338,6 @@ header {
   font-size: 1rem;
   width: 25px;
   text-align: center;
-  /*text-shadow: 1px 1px 1px #000;*/
 }
 
 .Shop1 {
