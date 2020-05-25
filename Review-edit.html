@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Revision</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <script
+      src="https://kit.fontawesome.com/4d73159aa5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 mt-2 col-md-2 mt-md-4">
+          <nav>
+            <dl
+              class="d-flex justify-content-around d-md-block mt-2 border-bottom border-secondary mb-2 mt-md-5 pb-2"
+            >
+              <dt class="mb-2">
+                <a href="announcement-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-user-tag menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Anuncios</div>
+                </a>
+              </dt>
+
+              <dt class="mb-2">
+                <a href="tasks-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-thumbtack icon-tasks menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Tareas</div>
+                </a>
+              </dt>
+
+              <dt class="mb-2">
+                <a href="people-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-user-alt fa-people menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Personas</div>
+                </a>
+              </dt>
+
+              <dt class="mb-2">
+                <a href="pages-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-file fa-pages menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Páginas</div>
+                </a>
+              </dt>
+              <dt class="mb-2">
+                <a href="Review-list.html" class="navegationLinks d-flex">
+                  <div class="icons-wrap">
+                    <i class="fas fa-search fa-revisions menu-icons"></i>
+                  </div>
+                  <div class="d-none d-md-block">Revisiones</div>
+                </a>
+              </dt>
+            </dl>
+          </nav>
+        </div>
+        <div class="col-12 col-md-10">
+          <header
+            class="row p-2 pt-3 pb-5 justify-content-center align-items-start text-white"
+          >
+            <div class="col-6 col-md-6 small mt-2">
+              <p>TABLERO</p>
+            </div>
+            <div class="col-12 order-3 col-md-4 order-md-2 pt-2 pr-md-5">
+              <form action="">
+                <input
+                  class="form-control input-lg"
+                  type="text"
+                  placeholder="Search"
+                />
+              </form>
+            </div>
+            <div class="col-6 col-md-2 order-md-3">
+              <div class="d-flex align-items-center justify-content-end">
+                <div class="mr-2 rounded-circle">
+                  <span>
+                    <img
+                      class="rounded-circle"
+                      width="60px"
+                      src="ImagenPerfil.png"
+                      alt="imagePerfil"
+                    />
+                  </span>
+                </div>
+                <div class="d-none d-md-block text-left small pt-2">
+                  <p class="">CarlosAdmin</p>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <main class="row mt-n3 mt-md-n5 px-md-3">
+            <div class="col bg-light mx-3 rounded">
+              <div class="mb-5 mt-4 d-flex">
+                <h1 class="text-dark flex-grow-1">Editar Revision</h1>
+                <button type="button" class="btn btn-success">
+                  <i class="fas fa-save color-white mr-md-2" title="Guardar"></i
+                  ><span class="d-none d-md-inline">Guardar</span>
+                </button>
+
+                <a
+                  href="pages-list.html"
+                  class="btn btn-danger mx-2"
+                  title="Salir sin guardar"
+                >
+                  <i class="fas fa-times mr-md-2 color-white"></i
+                  ><span class="d-none d-md-inline">Salir sin guardar</span>
+                </a>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <form action="">
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Titulo del documento</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Apuntes 101"
+                      />
+                    </div>
+
+                    <div class="form-group mt-4 mb-3">
+                      <label
+                        for="content"
+                        class="font-weight-bold text-secondary"
+                        >Contenido:</label
+                      >
+                      <textarea
+                        name="content"
+                        id="cont"
+                        class="form-control"
+                        rows="10"
+                      >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, commodi corporis ipsa aspernatur illo facere sunt ea incidunt doloremque adipisci quibusdam accusantium eos rerum sed earum consectetur blanditiis doloribus voluptatem!
+                      Quos, ad doloribus dolore alias veritatis voluptate minus soluta voluptates delectus facilis aliquam perferendis asperiores exercitationem fuga nisi obcaecati aspernatur corrupti illo.
+                      </textarea>
+                    </div>
+
+                    <label for="" class="font-weight-bold text-secondary"
+                    >Fecha modificacion</label>
+
+                    <div class='col align-items-center'>
+                      <input type="date" id="start" name="trip-start"
+                        value="2020-07-22"
+                        min="2020-01-01" max="2999-12-31">
+                    </div>
+
+                    <div class="dropdown m-4">
+                      <label for="" class="mr-5 font-weight-bold text-secondary"
+                        >Selecciona el usuario</label
+                      >
+                    
+                      <button
+                        class="btn btn-default dropdown-toggle btn-section"
+                        type="button"
+                        id="dropdownMenu2"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="true"
+                      >
+                        Seleccionar usuario 
+                        <span class="caret"></span>
+                      </button>
+                      <ul
+                        class="dropdown-menu checkbox-menu allow-focus"
+                        aria-labelledby="dropdownMenu2"
+                      >
+                        <li>
+                          <label>
+                            <input type="checkbox" checked /> Diseñador
+                          </label>
+                        </li>
+
+                        <li>
+                          <input type="checkbox" />
+                          <label for=""> Boina verde </label>
+                        </li>
+
+                        <li>
+                          <label> <input type="checkbox" /> CarlosAdmin </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" />
+                          <label for=""> Dionisio el arquitectdo de redes </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" />
+                          <label for=""> Filming el dionisio </label>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="form-group mt-4">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Adjuntar enlaces y/o archivos</label
+                      >
+                      <div>
+                        <i class="fas fa-link mr-2"></i
+                        ><a href="#">powerpointclase</a
+                        ><i
+                          class="fas fa-times ml-3 text-danger"
+                          title="eliminar enlace"
+                        ></i>
+                      </div>
+                      <input
+                        type="url"
+                        class="form-control mt-2"
+                        placeholder="https://www.enlace.es/"
+                      />
+                      <div class="add mt-2">
+                        <input type="file" class="form-control-file" />
+                      </div>
+                    </div>
+                    
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="pagePublish"
+                        value="pagePublish"
+                        id="pagePublish"
+                        checked
+                      />
+                      <label class="form-check-label" for="pagePublish">
+                        Publicar Página
+                      </label>
+                    </div>
+                    <div class="form-check mb-5">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="pageChange"
+                        value="pageChange"
+                        id="pageChange"
+                        checked
+                      />
+                      <label class="form-check-label" for="pageChange" checked>
+                        Notificar a los usuarios si el contenido ha cambiado
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="button" class="btn btn-success mx-auto">
+                    Guardar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <footer class="row">
+            <div class="col-12 d-flex justify-content-end">
+              <div class="flex-grow-1 bg-footer"></div>
+              <a href="" class="text-reset mx-2">Sobre nosotros</a>
+              <a href="" class="text-reset mx-2">Blog</a>
+              <a href="" class="text-reset mx-2">Licencia MIT</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

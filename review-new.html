@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listado de Anuncios</title>
+    <title>Agregar Página</title>
     <link rel="icon" href="favicon.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/4d73159aa5.js"
@@ -126,70 +126,107 @@
           <main class="row mt-n3 mt-md-n5 px-md-3">
             <div class="col bg-light mx-3 rounded">
               <div class="mb-5 mt-4 d-flex">
-                <h1 class="text-dark flex-grow-1">Listado Revisiones</h1>
+                <h1 class="text-dark flex-grow-1">Crear Nueva tarea</h1>
+                <button type="button" class="btn btn-success">
+                  <i class="fas fa-save color-white mr-md-2" title="Guardar"></i
+                  ><span class="d-none d-md-inline">Guardar</span>
+                </button>
+
                 <a
-                  href="announcement-new.html"
-                  type="button"
-                  class="btn btn-blue mx-2"
+                  href="pages-list.html"
+                  class="btn btn-danger mx-2"
+                  title="Salir sin guardar"
                 >
-                  <span class="d-none d-md-inline">Añadir</span>
-                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-times mr-md-2 color-white"></i
+                  ><span class="d-none d-md-inline">Salir sin guardar</span>
                 </a>
               </div>
-              <table class="table table-responsive-sm">
-                <thead>
-                  <tr>
-                    <th scope="col" class="text-secondary">TÍTULO</th>
-                    <th scope="col" class="text-center text-secondary">
-                      CONTENIDO
-                    </th>
-                    <th scope="col" class="text-center text-secondary">
-                      USUARIO
-                    </th>
-                    <th scope="col" class="text-center text-secondary">
-                      FECHA GUARDADO
-                    </th>
-                    <th scope="col" class="text-center text-secondary">
-                      NOTAS SOBRE MODIFICACION
-                    </th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      Titulo de doc modificado
-                    </th>
-                    <td class="text-center">
-                      <i class="fas fa-file mr-2"></i>docModif.pdf
-                    </td>
-                    <td class="text-center">
-                      CarlosAdmin
-                    </td>
-                    <td class="text-center">
-                      <input type="text" class="form-control" placeholder="24/07/2020">
-                    </td>
-                    <td class="text-center">
-                        Esta modificacion fué realizada para mejorar el uso
-                    </td>
-                    <td>
-                      <a
-                        href="Review-edit.html"
-                        class="text-reset mx-1"
-                        title="Editar"
-                        ><i class="fas fa-edit text-success"></i
-                      ></a>
-                      <a
-                        href="Review-delete.html"
-                        class="text-reset mx-1"
-                        title="Borrar"
-                        onclick="confirm('¿Seguro que quieres borrar?')"
-                        ><i class="fas fa-trash text-danger"></i
-                      ></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <form action="">
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Nombre de la tarea</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Añadir título"
+                      />
+                    </div>
+                    <div class="form-group mt-4">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Adjuntar enlaces</label
+                      >
+                      <input
+                        type="url"
+                        class="form-control"
+                        placeholder="https://www.enlace.es/"
+                      />
+                      <input
+                        type="url"
+                        class="form-control mt-2"
+                        placeholder="https://www.enlace.es/"
+                      />
+                    </div>
+
+                    <div class="form-group mt-4">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Adjuntar archivos</label
+                      >
+                      <input type="file" class="form-control-file" />
+                    </div>
+
+                    <div class="form-group mt-4 mb-5">
+                      <label
+                        for="announcement"
+                        class="font-weight-bold text-secondary"
+                        >Contenido:</label
+                      >
+                      <textarea
+                        name="announcement"
+                        id="an"
+                        class="form-control"
+                        rows="20"
+                      >
+                      </textarea>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="pagePublish"
+                        value="pagePublish"
+                        id="pagePublish"
+                      />
+                      <label class="form-check-label" for="pagePublish">
+                        Publicar Página
+                      </label>
+                    </div>
+                    <div class="form-check mb-5">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="pageChange"
+                        value="pageChange"
+                        id="pageChange"
+                        checked
+                      />
+                      <label class="form-check-label" for="pageChange">
+                        Notificar a los usuarios si el contenido ha cambiado
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="button" class="btn btn-success mx-auto">
+                    Guardar
+                  </button>
+                </div>
+              </div>
             </div>
           </main>
 
