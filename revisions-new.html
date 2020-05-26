@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Editar Revision</title>
+    <title>Agregar Página</title>
     <link rel="icon" href="favicon.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/4d73159aa5.js"
@@ -78,7 +78,7 @@
                 </a>
               </dt>
               <dt class="mb-2">
-                <a href="Review-list.html" class="navegationLinks d-flex">
+                <a href="revisions-list.html" class="navegationLinks d-flex">
                   <div class="icons-wrap">
                     <i class="fas fa-search fa-revisions menu-icons"></i>
                   </div>
@@ -126,7 +126,7 @@
           <main class="row mt-n3 mt-md-n5 px-md-3">
             <div class="col bg-light mx-3 rounded">
               <div class="mb-5 mt-4 d-flex">
-                <h1 class="text-dark flex-grow-1">Editar Revision</h1>
+                <h1 class="text-dark flex-grow-1">Crear Nueva tarea</h1>
                 <button type="button" class="btn btn-success">
                   <i class="fas fa-save color-white mr-md-2" title="Guardar"></i
                   ><span class="d-none d-md-inline">Guardar</span>
@@ -146,108 +146,52 @@
                   <form action="">
                     <div class="form-group">
                       <label for="" class="font-weight-bold text-secondary"
-                        >Titulo del documento</label
+                        >Nombre de la tarea</label
                       >
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="Apuntes 101"
+                        placeholder="Añadir título"
                       />
                     </div>
-
-                    <div class="form-group mt-4 mb-3">
-                      <label
-                        for="content"
-                        class="font-weight-bold text-secondary"
-                        >Contenido:</label
-                      >
-                      <textarea
-                        name="content"
-                        id="cont"
-                        class="form-control"
-                        rows="10"
-                      >
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, commodi corporis ipsa aspernatur illo facere sunt ea incidunt doloremque adipisci quibusdam accusantium eos rerum sed earum consectetur blanditiis doloribus voluptatem!
-                      Quos, ad doloribus dolore alias veritatis voluptate minus soluta voluptates delectus facilis aliquam perferendis asperiores exercitationem fuga nisi obcaecati aspernatur corrupti illo.
-                      </textarea>
-                    </div>
-
-                    <label for="" class="font-weight-bold text-secondary"
-                    >Fecha modificacion</label>
-
-                    <div class='col align-items-center'>
-                      <input type="date" id="start" name="trip-start"
-                        value="2020-07-22"
-                        min="2020-01-01" max="2999-12-31">
-                    </div>
-
-                    <div class="dropdown m-4">
-                      <label for="" class="mr-5 font-weight-bold text-secondary"
-                        >Selecciona el usuario</label
-                      >
-                    
-                      <button
-                        class="btn btn-default dropdown-toggle btn-section"
-                        type="button"
-                        id="dropdownMenu2"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="true"
-                      >
-                        Seleccionar usuario 
-                        <span class="caret"></span>
-                      </button>
-                      <ul
-                        class="dropdown-menu checkbox-menu allow-focus"
-                        aria-labelledby="dropdownMenu2"
-                      >
-                        <li>
-                          <label>
-                            <input type="checkbox" checked /> Diseñador
-                          </label>
-                        </li>
-
-                        <li>
-                          <input type="checkbox" />
-                          <label for=""> Boina verde </label>
-                        </li>
-
-                        <li>
-                          <label> <input type="checkbox" /> CarlosAdmin </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" />
-                          <label for=""> Dionisio el arquitectdo de redes </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" />
-                          <label for=""> Filming el dionisio </label>
-                        </li>
-                      </ul>
-                    </div>
-
                     <div class="form-group mt-4">
                       <label for="" class="font-weight-bold text-secondary"
-                        >Adjuntar enlaces y/o archivos</label
+                        >Adjuntar enlaces</label
                       >
-                      <div>
-                        <i class="fas fa-link mr-2"></i
-                        ><a href="#">powerpointclase</a
-                        ><i
-                          class="fas fa-times ml-3 text-danger"
-                          title="eliminar enlace"
-                        ></i>
-                      </div>
+                      <input
+                        type="url"
+                        class="form-control"
+                        placeholder="https://www.enlace.es/"
+                      />
                       <input
                         type="url"
                         class="form-control mt-2"
                         placeholder="https://www.enlace.es/"
                       />
-                      <div class="add mt-2">
-                        <input type="file" class="form-control-file" />
-                      </div>
                     </div>
-                    
+
+                    <div class="form-group mt-4">
+                      <label for="" class="font-weight-bold text-secondary"
+                        >Adjuntar archivos</label
+                      >
+                      <input type="file" class="form-control-file" />
+                    </div>
+
+                    <div class="form-group mt-4 mb-5">
+                      <label
+                        for="announcement"
+                        class="font-weight-bold text-secondary"
+                        >Contenido:</label
+                      >
+                      <textarea
+                        name="announcement"
+                        id="an"
+                        class="form-control"
+                        rows="20"
+                      >
+                      </textarea>
+                    </div>
+
                     <div class="form-check">
                       <input
                         class="form-check-input"
@@ -255,7 +199,6 @@
                         name="pagePublish"
                         value="pagePublish"
                         id="pagePublish"
-                        checked
                       />
                       <label class="form-check-label" for="pagePublish">
                         Publicar Página
@@ -270,7 +213,7 @@
                         id="pageChange"
                         checked
                       />
-                      <label class="form-check-label" for="pageChange" checked>
+                      <label class="form-check-label" for="pageChange">
                         Notificar a los usuarios si el contenido ha cambiado
                       </label>
                     </div>
