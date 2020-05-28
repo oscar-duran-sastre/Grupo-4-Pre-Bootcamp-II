@@ -296,6 +296,32 @@ header {
   text-decoration: none;
 }
 
+.custom-switch .custom-control-label::after {
+  background-color: green;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: red;
+  background-color: red;
+}
+
+.price-cart {
+  font-size: 1.4rem;
+}
+
+.table-shop {
+  vertical-align: middle !important;
+}
+
+.shop-product:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+figure {
+  min-width: 1px;
+  max-width: 250px;
+}
+
 /* TIENDA ONLINE NAVEGACION IZQUIERDA */
 
 .footerStore {
@@ -308,7 +334,7 @@ header {
   position: fixed;
 }
 
-.headerStore,  
+.headerStore,
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
