@@ -223,4 +223,17 @@
 
 /*END animated dropdown*/
 
+.footerRegister {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 767px) {
+    .footerRegister {
+        position: relative;
+    }
+}
+
 /* END login */

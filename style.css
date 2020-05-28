@@ -328,17 +328,6 @@ figure {
 
 /* TIENDA ONLINE NAVEGACION IZQUIERDA */
 
-.footerStore, 
-.footerCart {
-  font-size: 0.8rem;
-  height: 70px;
-}
-
-.footerCart {
-  position: fixed;
-  bottom: 0;
-}
-
 .navLeft {
   margin-top: 75px;
   position: fixed;
@@ -417,9 +406,38 @@ figure {
   color: #e83011;
 }
 
+.footerStore, 
+.footerCart {
+  font-size: 0.8rem;
+  height: 70px;
+}
+
+.footerCart {
+  position: fixed;
+  bottom: 0;
+}
+
+.footerDashboard {
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  font-size: 0.8rem;
+}
+
+.footerDashboardRelative {
+  position: relative;
+  bottom: 0;
+  height: 70px;
+  font-size: 0.8rem;
+}
+
 /* MEDIA QUERIE PARA MOBILE */
 
 @media (max-width: 767px) {
+  /* .footerDashboardRelative {
+      position: relative;
+  } */
+
   .menu-icons {
     font-size: 1.65rem;
   }

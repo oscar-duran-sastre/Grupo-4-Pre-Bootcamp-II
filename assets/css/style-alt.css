@@ -246,6 +246,7 @@
 .footerLanding {
     background-color: #20123a;
 }
+
 .footerLanding {
     font-size: 0.9rem;
     height: 70px;
@@ -303,6 +304,7 @@
 .headerRowLanding {
     margin-bottom: 70px;
 }
+
 .headerCategoriesLanding {
     font-size: 1.2rem;
     color: black;
@@ -321,10 +323,22 @@
     background-attachment: scroll;
 }
 
+.footerRegister {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    font-size: 0.8rem;
+    background-color: #ffffff;
+}
+
 @media (max-width: 767px) {
     .capturaLaptopLanding {
         height: 150px;
     }
-  }
+
+    .footerRegister {
+        position: relative;
+    }
+}
 
 /* END landing */
