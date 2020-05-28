@@ -1,5 +1,5 @@
 
-/* login */
+/* index */
 
 /** {
     margin: 0;
@@ -231,4 +231,100 @@
 
 /*END animated dropdown*/
 
-/* END login */
+/* END index */
+
+/* landing */
+
+.bodyLanding {
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bgLanding2,
+.footerLanding {
+    background-color: #20123a;
+}
+.footerLanding {
+    font-size: 0.9rem;
+    height: 70px;
+}
+
+.headerStoreRow {
+    background-color: white;
+}
+
+.otherWhite {
+    background-color: #f9f9fa;
+}
+
+.h1Landing {
+    font-size: 2rem;
+}
+
+.h2Landing {
+    font-size: 1.8rem;
+}
+
+.h3Landing {
+    font-size: 1.5rem;
+}
+
+.h4Landing {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.h5Landing {
+    color: white;
+}
+
+.h5LinkLanding,
+.textBlueLanding {
+    text-decoration: underline;
+}
+
+.h5LinkLanding:hover,
+.textBlueLanding:hover {
+    text-decoration: none;
+  }
+
+.textBlueLanding {
+    color: #2879e4;
+    font-weight: bold;
+}
+.boldLanding {
+    font-weight: bold;
+
+}
+
+.headerRowLanding {
+    margin-bottom: 70px;
+}
+.headerCategoriesLanding {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.textLanding2 {
+    font-size: 2rem;
+    color: #ff298a;
+    font-weight: bold;
+}
+
+.bgLanding1 {
+    background-image: url('/assets/img/landing/fondo-landing-1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+@media (max-width: 767px) {
+    .capturaLaptopLanding {
+        height: 150px;
+    }
+  }
+
+/* END landing */

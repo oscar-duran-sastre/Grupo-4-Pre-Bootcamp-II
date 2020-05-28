@@ -242,6 +242,10 @@ header {
 
 /* TIENDA ONLINE */
 
+.shop-product {
+  border-radius: 5px;
+}
+
 .searchStore {
   border-radius: 20px;
   height: 35px;
@@ -324,9 +328,15 @@ figure {
 
 /* TIENDA ONLINE NAVEGACION IZQUIERDA */
 
-.footerStore {
+.footerStore, 
+.footerCart {
   font-size: 0.8rem;
   height: 70px;
+}
+
+.footerCart {
+  position: fixed;
+  bottom: 0;
 }
 
 .navLeft {
@@ -335,7 +345,8 @@ figure {
 }
 
 .headerStore,
-.card {
+.card,
+.shop-product {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -415,5 +426,9 @@ figure {
 
   table {
     font-size: 0.7rem;
+  }
+
+  .footerCart {
+    position: relative;
   }
 }
