@@ -576,9 +576,7 @@
         <!-- END nav left -->
 
         <!-- main -->
-        <div
-          class="offset-2 col-10 offset-sm-1 col-sm-11 offset-md-2 col-md-10"
-        >
+        <div class="offset-2 col-9 offset-sm-1 col-sm-10 offset-md-2 col-md-10 pl-4">
           <div class="row">
             <!-- <div class="col-md-10 mt-3 mb-2 border-bottom"> -->
             <div class="col-md-10 mt-3 mb-2">
@@ -609,7 +607,7 @@
                 <img
                   src="assets/img/photosCourse/course01.png"
                   alt="curso de cocina creativa"
-                  width="250px"
+                  width="225px"
                   class="border border-secondary mx-auto d-block my-3 mt-md-0 mx-md-4 align-middle rounded courseOne"
                 />
               </div>
@@ -669,7 +667,7 @@
                 <img
                   src="assets/img/photosCourse/course02.png"
                   alt="curso de yoga"
-                  width="250px"
+                  width="225px"
                   class="border border-secondary mx-auto d-block my-3 mt-md-0 mx-md-4 align-middle rounded courseTwo"
                 />
               </div>
@@ -703,16 +701,28 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-10">
-              <div class="text-right price-cart">
+            <div class="col-md-10 pt-4">
+              <div class="text-center text-md-right price-cart">
                 <span class="font-weight-bolder"
                   >Total (<span id="totalProducts"></span>):</span
                 >
                 <span id="priceTotal"></span>€
               </div>
             </div>
+
+            <!-- payment -->
+            <div class="w-100"></div>
+            <div class="col-md-10 d-flex justify-content-center justify-content-md-end pt-4">
+              <span class="font-weight-bolder price-cart">Formas de pago:</span>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md-10 d-flex justify-content-center justify-content-md-end py-5">
+              <div id="paymentBtn"></div>              
+            </div>
+            <!-- END payment -->
+
           </div>
-          <div class="row mt-3">
+          <!-- <div class="row mt-3">
             <div class="col-md-10">
               <a
                 href="#"
@@ -720,16 +730,18 @@
               >
                 TRAMITAR PEDIDO
               </a>
+
             </div>
-          </div>
+          </div>  -->
         </div>
         <!-- END main -->
-      </div>
+
+      </div>        
       <!-- END nav left + main -->
 
       <!-- footer -->
-      <div class="row">
-        <nav class="col-12 navbar navbar-expand navbar-light bg-faded footerCart justify-content-center justify-content-md-end">
+      <div class="row mt-5">
+        <nav class="col-12 navbar navbar-expand navbar-light bg-white footerCart justify-content-center justify-content-md-end">
           <ul class="navbar-nav">
               <li class="nav-item px-1"><a class="nav-link" href="landing.html">Sobre nosotros</a></li>
               <li class="nav-item px-1"><a class="nav-link" href="https://www.gonzalezlopez.dev/">Blog</a></li> 
@@ -739,6 +751,8 @@
       </div>
       <!-- END footer -->
     </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+    <script>paypal.Buttons().render(document.getElementById('paymentBtn'));</script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
