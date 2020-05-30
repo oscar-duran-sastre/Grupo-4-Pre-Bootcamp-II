@@ -15,24 +15,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="style.css" />
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -89,9 +72,7 @@
           </nav>
         </div>
         <div class="col-12 col-md-10">
-          <header
-            class="row p-2 pt-3 pb-5 justify-content-center align-items-start text-white"
-          >
+          <header class="row p-2 pt-3 pb-5 justify-content-center align-items-start text-white">
             <div class="col-6 col-md-6 small mt-2">
               <a class="navbar-brand logoDemo" href="store.html" id="brand-nav-index">
                 <img src="assets/img/logos/logoblanco.png" alt="Logo de empresa AON"
@@ -186,11 +167,35 @@
                   </tr>
                 </tbody>
               </table>
+
+              <!-- charts -->
+              <div class="row py-5">
+                <div class="col-12 col-md-6">
+                  <canvas id="typePie" 
+                    width="690" 
+                    height="345" 
+                    class="chartjs-render-monitor" 
+                    style="display: block; width: 690px; height: 345px;">
+                  </canvas>
+                </div>
+                <div class="col-12 col-md-6 mt-5 mt-md-0">
+                  <canvas id="typeDoughnut" 
+                    width="690" 
+                    height="345" 
+                    class="chartjs-render-monitor" 
+                    style="display: block; width: 690px; height: 345px;">
+                  </canvas>
+                </div>
+              </div> 
+              <!-- END charts -->
+
             </div>
           </main>
-
+          
         </div>
       </div>
+
+      
 
       <!-- footer -->
       <div class="row justify-content-center justify-content-md-end pt-5">
@@ -205,5 +210,131 @@
       <!-- END footer -->
 
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <!-- pie chart -->
+    <script>
+      window.addEventListener('load', function() {
+          var ctx = document.getElementById('typePie').getContext('2d');
+          var chart = new Chart(ctx, {
+  
+              type: 'pie',
+              data: {
+                  labels: ["Lorem", "Ipsum", "Dolor", "Sit", "Amet"],
+                  datasets: [{
+                      label: "Lorem ipsum",
+                      backgroundColor: ['rgba(61,119,244,.5)', 'rgba(85,102,241,.5)', 'rgba(72,68,182,.5)', 'rgba(35,31,94,.5)', 'rgba(24,19,59,.5)'],
+                      data: [89, 55, 78, 36, 14],
+                  }]
+              },
+  
+              options: {
+                  responsive: true,
+                          title: {
+                              display: true,
+                              text: 'Tipo de gráfico: Circular'
+                          },
+                          tooltips: {
+                              mode: 'index',
+                              intersect: false,
+                          },
+                          hover: {
+                              mode: 'nearest',
+                              intersect: true,
+                          },
+                          scales: {
+                              xAxes: [{
+                                                          gridLines: {display:false},
+                                                          display: false,
+                              }],
+                              yAxes: [{
+                                                          gridLines: {display:false},
+                                                          display: false,
+                              }]
+                          }
+              }
+          });
+          var mediaQuery = window.matchMedia( '(min-width: 768px)' );
+        function toggleAspectRatio( mq ) {
+          chart.options.maintainAspectRatio = mq.matches;
+          chart.resize();
+        }
+        
+        toggleAspectRatio( mediaQuery );
+        
+        mediaQuery.addListener( toggleAspectRatio );
+      })
+    </script>
+
+    <!-- doughnut chart -->
+    <script>
+      window.addEventListener('load', function() {
+          var ctx = document.getElementById('typeDoughnut').getContext('2d');
+          var chart = new Chart(ctx, {
+  
+              type: 'doughnut',
+              data: {
+                  labels: ["Lorem", "Ipsum", "Dolor", "Sit", "Amet"],
+                  datasets: [{
+                      label: "Lorem ipsum",
+                      backgroundColor: ['rgba(61,119,244,.5)', 'rgba(85,102,241,.5)', 'rgba(72,68,182,.5)', 'rgba(35,31,94,.5)', 'rgba(24,19,59,.5)'],
+                      data: [89, 55, 78, 36, 14],
+                  }]
+              },
+  
+              options: {
+                  responsive: true,
+                          title: {
+                              display: true,
+                              text: 'Tipo de gráfico: Donut'
+                          },
+                          tooltips: {
+                              mode: 'index',
+                              intersect: false,
+                          },
+                          hover: {
+                              mode: 'nearest',
+                              intersect: true,
+                          },
+                          scales: {
+                              xAxes: [{
+                                                          gridLines: {display:false},
+                                                          display: false,
+                              }],
+                              yAxes: [{
+                                                          gridLines: {display:false},
+                                                          display: false,
+                              }]
+                          }
+              }
+          });
+          var mediaQuery = window.matchMedia( '(min-width: 768px)' );
+        function toggleAspectRatio( mq ) {
+          chart.options.maintainAspectRatio = mq.matches;
+          chart.resize();
+        }
+        
+        toggleAspectRatio( mediaQuery );
+        
+        mediaQuery.addListener( toggleAspectRatio );
+      })
+    </script>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
